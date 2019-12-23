@@ -8,8 +8,6 @@ import (
 
 func StudySlice()  {
 	sliceDataType()
-	//stringToByteSlice()
-	//stringToRuneSlice()
 }
 
 func sliceDataType()  {
@@ -56,7 +54,7 @@ func sliceDataType()  {
 }
 
 
-func slice
+
 
 
 

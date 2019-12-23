@@ -19,9 +19,11 @@ func StudyString() {
 	stringToRuneSlice()
 	//stringJoin()
 
+
 }
 
 var str = "Hello 世界！"
+
 
 func basicString() {
 	fmt.Printf("%p,%T,%d,%v,%s\n", &str, str, unsafe.Sizeof(""), str, str)
@@ -30,6 +32,7 @@ func basicString() {
 		fmt.Printf("%d\t%c\t%q\t%d\t%#x \n", i, v, v, v, v)
 	}
 }
+
 
 func stringStruct() {
 
@@ -101,3 +104,4 @@ func stringJoin() {
 	sb.WriteString("世界！")
 	fmt.Println(sb.String())
 }
+
