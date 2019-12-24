@@ -44,6 +44,7 @@ func stringStruct() {
 	fmt.Printf("%p,%v,%s,%c\n", unsafe.Pointer(bs), *bs, *bs, bs[0])
 	for i,v:=range bs{
 		fmt.Println(i,v)		//字符串底層數組不能修改
+
 	}
 
 
