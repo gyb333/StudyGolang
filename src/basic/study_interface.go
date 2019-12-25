@@ -2,7 +2,32 @@ package basic
 
 import "fmt"
 
+
+
 func InterfaceMain()  {
+
+
+	 baseInterface()
+}
+
+
+type Inter interface {
+	Ping()
+	Pang()
+}
+
+type St struct{}
+
+//方法：限定了接受者
+func (St) Ping() {
+	fmt.Println("ping")
+}
+//方法：限定了接受者
+func (*St) Pang() {
+	fmt.Println("Pang")
+}
+
+func baseInterface()  {
 	var st *St = nil
 	var it Inter = st
 	fmt.Printf("%T,%p,%#V,%d\n", st, st, st, st)
@@ -15,17 +40,4 @@ func InterfaceMain()  {
 }
 
 
-type Inter interface {
-	Ping()
-	Pang()
-}
 
-type St struct{}
-
-func (St) Ping() {
-	fmt.Println("ping")
-}
-
-func (*St) Pang() {
-	fmt.Println("Pang")
-}

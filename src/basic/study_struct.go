@@ -86,10 +86,11 @@ func baseStruct()  {
 
 
 
-var x struct {
+var x struct {	//匿名结构体类型
 	a bool
 	b int16
 	c []int
+	string		//匿名字段默认把类型设置为名称
 }
 
 func structOffset() {
@@ -100,5 +101,7 @@ func structOffset() {
 	// 和 pb := &x.b 等价
 	pb := (*int16)(Pointer(uintptr(Pointer(&x)) + Offsetof(x.b)))
 	*pb = 42
-	fmt.Println(x.b) // "42"
+	fmt.Println(x.b,x.string) // "42"
 }
+
+

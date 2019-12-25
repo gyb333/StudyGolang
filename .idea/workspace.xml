@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5378eaf9-fd24-443b-81a8-2dee3e07966b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/basic/study_oop.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/basic/study_select.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/basic/study_func.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/basic/study_func.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/basic/study_interface.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/basic/study_interface.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/basic/study_struct.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/basic/study_struct.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/basic/study_type.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/basic/study_type.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/concurrent/concurrencyslower.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/concurrent/concurrencyslower.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/concurrent/concurrencyslower_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/concurrent/concurrencyslower_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.go" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,7 +29,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="go" value="108" />
+          <entry key="go" value="114" />
           <entry key="h" value="1" />
           <entry key="iml" value="2" />
           <entry key="md" value="1" />
@@ -35,7 +38,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="C++" value="1" />
-          <entry key="Go" value="108" />
+          <entry key="Go" value="114" />
           <entry key="IDEA_MODULE" value="2" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
@@ -44,12 +47,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="3" />
-          <entry key="go" value="7200" />
+          <entry key="go" value="8157" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="7200" />
+          <entry key="Go" value="8157" />
           <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
@@ -75,13 +78,52 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/basic/study_struct.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="55" column="31" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
+            <state relative-caret-position="-291">
+              <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="87" />
               <folding>
                 <element signature="n#!!block;n#StudyStruct#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/basic/study_interface.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="551">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/basic/study_oop.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="245">
+              <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="245">
+              <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/basic/study_select.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="348">
+              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+              <folding>
+                <element signature="e#15#40#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -136,17 +178,20 @@
         <option value="$PROJECT_DIR$/src/basic/study_fibonacci.go" />
         <option value="$PROJECT_DIR$/src/basic/study_new_make.go" />
         <option value="$PROJECT_DIR$/src/basic/study_controlflow.go" />
-        <option value="$PROJECT_DIR$/src/basic/study_func.go" />
         <option value="$PROJECT_DIR$/src/basic/study_chan.go" />
-        <option value="$PROJECT_DIR$/src/basic/study_interface.go" />
         <option value="$PROJECT_DIR$/src/basic/study_reflect.go" />
         <option value="$PROJECT_DIR$/src/basic/study_slice.go" />
-        <option value="$PROJECT_DIR$/src/main.go" />
         <option value="$PROJECT_DIR$/src/basic/study_pointer.go" />
         <option value="$PROJECT_DIR$/src/concurrent/concurrencyslower_test.go" />
         <option value="$PROJECT_DIR$/src/concurrent/concurrencyslower.go" />
         <option value="$PROJECT_DIR$/src/basic/study_type.go" />
         <option value="$PROJECT_DIR$/src/basic/study_struct.go" />
+        <option value="$PROJECT_DIR$/src/web.go" />
+        <option value="$PROJECT_DIR$/src/basic/study_func.go" />
+        <option value="$PROJECT_DIR$/src/basic/study_select.go" />
+        <option value="$PROJECT_DIR$/src/basic/study_interface.go" />
+        <option value="$PROJECT_DIR$/src/main.go" />
+        <option value="$PROJECT_DIR$/src/basic/study_oop.go" />
       </list>
     </option>
   </component>
@@ -163,8 +208,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="481" />
-    <option name="y" value="48" />
+    <option name="x" value="542" />
+    <option name="y" value="86" />
     <option name="width" value="1490" />
     <option name="height" value="924" />
   </component>
@@ -197,18 +242,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="basic" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="StudyGolang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StudyGolang" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StudyGolang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StudyGolang" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Pattern" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -219,7 +252,7 @@
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1577260699759" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1577264569772" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
@@ -274,12 +307,12 @@
       <option name="presentableId" value="Default" />
       <updated>1576737642815</updated>
       <workItem from="1576737644381" duration="28747000" />
-      <workItem from="1577082285562" duration="44550000" />
+      <workItem from="1577082285562" duration="48361000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73297000" />
+    <option name="totallyTimeSpent" value="77108000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -291,10 +324,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="177" y="53" width="1490" height="924" extended-state="0" />
+    <frame x="507" y="14" width="1490" height="924" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20979021" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20979021" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -303,13 +336,13 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.329718" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32911393" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.1556962" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.1556962" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -331,24 +364,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/StudyGolang.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Go/src/encoding/binary/binary.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1551">
-          <caret line="668" column="8" selection-start-line="668" selection-start-column="8" selection-end-line="668" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Go/src/unicode/tables.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4763">
@@ -549,13 +564,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/basic/study_func.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2166">
-          <caret line="86" column="1" lean-forward="true" selection-start-line="86" selection-start-column="1" selection-end-line="86" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Go/src/reflect/type.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
@@ -598,13 +606,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="31" column="38" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
@@ -670,13 +671,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/basic/study_interface.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/basic/study_reflect.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-618">
@@ -704,13 +698,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/web.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/basic/study_func.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-406">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/basic/study_select.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding>
+            <element signature="e#15#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/basic/study_struct.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="55" column="31" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
+        <state relative-caret-position="-291">
+          <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="87" />
           <folding>
             <element signature="n#!!block;n#StudyStruct#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/basic/study_interface.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/basic/study_oop.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
         </state>
       </provider>
     </entry>
