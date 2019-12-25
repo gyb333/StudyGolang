@@ -13,11 +13,11 @@ import (
 
 func StudyString() {
 
-	//basicString()
+	basicString()
 	stringStruct()
 	stringToByteSlice()
 	stringToRuneSlice()
-	//stringJoin()
+	stringJoin()
 
 
 }
@@ -44,7 +44,6 @@ func stringStruct() {
 	fmt.Printf("%p,%v,%s,%c\n", unsafe.Pointer(bs), *bs, *bs, bs[0])
 	for i,v:=range bs{
 		fmt.Println(i,v)		//字符串底層數組不能修改
-
 	}
 
 
@@ -58,6 +57,7 @@ func stringToByteSlice()  {
 
 	rstr := *(*string)(unsafe.Pointer(&bs))
 	fmt.Println(rstr)
+
 
 
 	sh := (*reflect.StringHeader)(unsafe.Pointer(&str))
@@ -106,3 +106,17 @@ func stringJoin() {
 	fmt.Println(sb.String())
 }
 
+func BaseArray()  {
+	bs :=[]byte(str)
+	copy(bs,[]byte("h"))
+	fmt.Println(str,string(bs))
+
+	sh := (*reflect.StringHeader)(unsafe.Pointer(&str))
+	p := unsafe.Pointer(sh.Data)
+	as := (*[15]byte)(p)
+	bs =as[0:]
+	//copy(bs,[]byte("h"))  //长度没有变化,底层数组不允许被修改
+	bs=append(bs,'h')	//bs指向的底层数组改变了,可以添加
+	fmt.Printf("%s,%s,%s",str,string(bs),*as)
+
+}

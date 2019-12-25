@@ -23,4 +23,8 @@ func mapDataType()  {
 		fmt.Println(k,v)
 	}
 
+
+
+
+
 }
