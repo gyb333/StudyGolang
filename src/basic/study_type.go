@@ -8,6 +8,11 @@ import (
 )
 
 
+/**
+值类型 深拷贝：基本数据类型  数组 结构体
+引用类型 浅拷贝: 切片 字典 通道  函数 指针类型
+ */
+
 func init() {
 	fmt.Println("basic package init")
 }
@@ -58,10 +63,7 @@ func SliceInt_Sum(s SliceInt) int {
 	return sum
 }
 
-/**
-值类型 深拷贝：基本数据类型  数组
-引用类型 浅拷贝: 切片 字典 通道
- */
+
 func BasicType()  {
 	unsafeData()
 	var s SliceInt = []int{1, 2, 3, 4}

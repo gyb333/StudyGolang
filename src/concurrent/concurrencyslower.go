@@ -6,7 +6,7 @@ import (
 	)
 
 const (
-	limit = 100000000000
+	limit = 10000000000
 )
 
 func SerialSum() int {

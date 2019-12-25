@@ -28,7 +28,7 @@ unsafe.Offsetof 函数的参数必须是一个字段 x.f, 然后返回 f 字段�
 
 func StudyStruct()  {
 	baseStruct()
-	//structOffset()
+	structOffset()
 }
 
 
@@ -52,9 +52,9 @@ func baseStruct()  {
 	var slice []int
 	var m map[string]int
 	var c  chan struct{}
-	f :=func (){}
-	var s struct{}
-	var in interface{}
+	f :=func (){}		//匿名函数
+	var s struct{}		//匿名结构体
+	var in interface{}	//匿名接口
 
 	fmt.Println(reflect.TypeOf(b),Sizeof(b),Alignof(b))					//bool 1 1
 	fmt.Println(reflect.TypeOf(i8),Sizeof(i8),Alignof(i8))				//int8 1 1
@@ -82,14 +82,10 @@ func baseStruct()  {
 	fmt.Println(reflect.TypeOf(s),Sizeof(s),Alignof(s))					//struct {} 0 1
 	fmt.Println(reflect.TypeOf(in),Sizeof(in),Alignof(in))				//<nil> 16 8
 
-
-
-
-
-
-
-
 }
+
+
+
 var x struct {
 	a bool
 	b int16
