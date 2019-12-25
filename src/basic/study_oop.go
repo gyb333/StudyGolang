@@ -6,7 +6,9 @@ import "fmt"
 继承：通过匿名结构体的嵌套来实现is a
       使用组合的方式实现 has a
 覆盖：子类可以重新实现父类的方法
-多态：接口可以用任何实现该接口的指针来实例化
+
+多态：把接口作为参数或者返回值类型传递
+	接口可以用任何实现该接口的指针来实例化
 
 
 方法：某个类型的行为功能，需要知道接受者调用
@@ -32,7 +34,7 @@ type School struct{
 	address string
 }
 
-type test interface {
+type ManyState interface {
 	PersonName() string
 	SchoolName() string
 }
@@ -58,10 +60,15 @@ func (s *Student) SchoolName() string {
 func OOPMain()  {
 	p:=Person{name:"张三",age:10}
 	fmt.Println(p.name,p.age)
-	ms:=Student{Person:p,s:School{"学校","地址"}}
-	fmt.Println(ms.name,ms.age,ms.s.name,ms.s.address)
-	fmt.Println(ms.PersonName(),ms.Person.PersonName())
+	s:=Student{Person:p,s:School{"学校","地址"}}
+	fmt.Println(s.name,s.age,s.s.name,s.s.address)
+	fmt.Println(s.PersonName(),s.Person.PersonName())
 
-	fmt.Println(ms.SchoolName(),ms.s.SchoolName())
+	fmt.Println(s.SchoolName(),s.s.SchoolName())
 
+	var ms ManyState	//接口类型
+	ms =&s
+
+	fmt.Println("接口类型调用实现多态：",ms.PersonName(),ms.SchoolName())
 }
+

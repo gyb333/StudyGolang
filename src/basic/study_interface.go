@@ -2,7 +2,9 @@ package basic
 
 import "fmt"
 
-
+/**
+接口与类型之间是非嵌入式的
+ */
 
 func InterfaceMain()  {
 

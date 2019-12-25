@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5378eaf9-fd24-443b-81a8-2dee3e07966b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/basic/study_oop.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/basic/study_select.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/basic/study_func.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/basic/study_func.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/basic/study_interface.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/basic/study_interface.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/basic/study_struct.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/basic/study_struct.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/basic/study_oop.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/basic/study_oop.go" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,12 +42,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="3" />
-          <entry key="go" value="8157" />
+          <entry key="go" value="8276" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="8157" />
+          <entry key="Go" value="8276" />
           <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
@@ -93,8 +88,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/basic/study_interface.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="43" selection-start-line="43" selection-end-line="43" />
+            <state relative-caret-position="-248">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -102,8 +97,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/basic/study_oop.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+            <state relative-caret-position="232">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -189,8 +184,8 @@
         <option value="$PROJECT_DIR$/src/web.go" />
         <option value="$PROJECT_DIR$/src/basic/study_func.go" />
         <option value="$PROJECT_DIR$/src/basic/study_select.go" />
-        <option value="$PROJECT_DIR$/src/basic/study_interface.go" />
         <option value="$PROJECT_DIR$/src/main.go" />
+        <option value="$PROJECT_DIR$/src/basic/study_interface.go" />
         <option value="$PROJECT_DIR$/src/basic/study_oop.go" />
       </list>
     </option>
@@ -208,8 +203,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="542" />
-    <option name="y" value="86" />
+    <option name="x" value="223" />
+    <option name="y" value="26" />
     <option name="width" value="1490" />
     <option name="height" value="924" />
   </component>
@@ -236,12 +231,6 @@
               <item name="StudyGolang" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="StudyGolang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StudyGolang" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="basic" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -252,7 +241,7 @@
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1577264569772" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1577266178124" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
@@ -307,12 +296,12 @@
       <option name="presentableId" value="Default" />
       <updated>1576737642815</updated>
       <workItem from="1576737644381" duration="28747000" />
-      <workItem from="1577082285562" duration="48361000" />
+      <workItem from="1577082285562" duration="50620000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77108000" />
+    <option name="totallyTimeSpent" value="79367000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -324,8 +313,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="507" y="14" width="1490" height="924" extended-state="0" />
-    <editor active="true" />
+    <frame x="223" y="26" width="1490" height="924" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20979021" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -741,15 +729,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/basic/study_interface.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        <state relative-caret-position="-248">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/basic/study_oop.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+        <state relative-caret-position="232">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
