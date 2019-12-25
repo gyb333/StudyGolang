@@ -3,6 +3,7 @@ package basic
 import (
 	"fmt"
 	. "unsafe"
+	"reflect"
 )
 
 /**
@@ -23,6 +24,72 @@ unsafe.Offsetof 函数的参数必须是一个字段 x.f, 然后返回 f 字段�
 **/
 
 
+
+
+func StudyStruct()  {
+	baseStruct()
+	//structOffset()
+}
+
+
+
+func baseStruct()  {
+	var b bool
+	var i8 int8
+	var u8 uint8
+	var i16 int16
+	var u16 uint16
+	var i32 int32
+	var u32 uint32
+	var i int
+	var u uint
+	var f32 float32
+	var f64 float64
+	var ptr uintptr
+	var p *int
+	var str string
+	var array [8]byte
+	var slice []int
+	var m map[string]int
+	var c  chan struct{}
+	f :=func (){}
+	var s struct{}
+	var in interface{}
+
+	fmt.Println(reflect.TypeOf(b),Sizeof(b),Alignof(b))					//bool 1 1
+	fmt.Println(reflect.TypeOf(i8),Sizeof(i8),Alignof(i8))				//int8 1 1
+	fmt.Println(reflect.TypeOf(u8),Sizeof(u8),Alignof(u8))				//uint8 1 1
+	fmt.Println(reflect.TypeOf(i16),Sizeof(i16),Alignof(i16))			//int16 2 2
+	fmt.Println(reflect.TypeOf(u16),Sizeof(u16),Alignof(u16))			//uint16 2 2
+	fmt.Println(reflect.TypeOf(i32),Sizeof(i32),Alignof(i32))			//int32 4 4
+	fmt.Println(reflect.TypeOf(u32),Sizeof(u32),Alignof(u32))			//uint32 4 4
+	fmt.Println(reflect.TypeOf(i),Sizeof(i),Alignof(i))					//int 8 8
+	fmt.Println(reflect.TypeOf(u),Sizeof(u),Alignof(u))					//uint 8 8
+	fmt.Println(reflect.TypeOf(f32),Sizeof(f32),Alignof(f32))			//float32 4 4
+	fmt.Println(reflect.TypeOf(f64),Sizeof(f64),Alignof(f64))			//float64 8 8
+
+	fmt.Println(reflect.TypeOf(ptr),Sizeof(ptr),Alignof(ptr))			//uintptr 8 8
+	fmt.Println(reflect.TypeOf(p),Sizeof(p),Alignof(p))					//*int 8 8
+	fmt.Println(reflect.TypeOf(array),Sizeof(array),Alignof(array))		//[8]uint8 8 1
+	fmt.Println(reflect.TypeOf(str),Sizeof(str),Alignof(str))			//string 16 8
+
+
+	fmt.Println(reflect.TypeOf(slice),Sizeof(slice),Alignof(slice))		//[]int 24 8
+	fmt.Println(reflect.TypeOf(m),Sizeof(m),Alignof(m))					//map[string]int 8 8
+	fmt.Println(reflect.TypeOf(c),Sizeof(c),Alignof(c))					//chan struct {} 8 8
+
+	fmt.Println(reflect.TypeOf(f),Sizeof(f),Alignof(f))					//func() 8 8
+	fmt.Println(reflect.TypeOf(s),Sizeof(s),Alignof(s))					//struct {} 0 1
+	fmt.Println(reflect.TypeOf(in),Sizeof(in),Alignof(in))				//<nil> 16 8
+
+
+
+
+
+
+
+
+}
 var x struct {
 	a bool
 	b int16

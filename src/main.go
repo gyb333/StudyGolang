@@ -15,7 +15,9 @@ func main()  {
 	//basic.BaseArray()
 	//basic.FuncMain()
 	//basic.InterfaceMain()
-	basic.ReflectMain()
+	//basic.ReflectMain()
+	//basic.StudyStruct()
 
+	basic.StudyPointer()
 
 }

@@ -4,10 +4,21 @@ import (
 	"fmt"
 	"unsafe"
 			"reflect"
+	"bytes"
 )
 
 func StudySlice()  {
+	sliceBase()
 	sliceDataType()
+}
+
+func sliceBase()  {
+	a := []byte("a,b,c")
+	b := bytes.Split(a, []byte(","))
+	fmt.Println(a,b)
+	a =[]byte(str)
+	b = bytes.Split(a,[]byte(""))
+	fmt.Println(string(a),b)
 }
 
 func sliceDataType()  {
