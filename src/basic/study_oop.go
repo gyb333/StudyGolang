@@ -1,6 +1,8 @@
 package basic
 
-import "fmt"
+import (
+	"fmt"
+	)
 
 /*
 继承：通过匿名结构体的嵌套来实现is a
@@ -68,7 +70,11 @@ func OOPMain()  {
 
 	var ms ManyState	//接口类型
 	ms =&s
-
 	fmt.Println("接口类型调用实现多态：",ms.PersonName(),ms.SchoolName())
+
+	//类型断言
+	if i,ok :=ms.(*Student); ok{
+		fmt.Printf("%p,%p,%v\n",ms,i,i)
+	}
 }
 

@@ -151,11 +151,11 @@ func fibonacciBig(n int) (r *big.Int) {
 
 }
 
-func fibonacciRecursion(n int) (res int) {
+func FibonacciRecursion(n int) (res int) {
 	if n <= 1 {
-		res = 1
+		res = n
 	} else {
-		res = fibonacciRecursion(n-2) + fibonacciRecursion(n-1)
+		res = FibonacciRecursion(n-2) + FibonacciRecursion(n-1)
 	}
 	return
 }

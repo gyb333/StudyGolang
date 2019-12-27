@@ -45,8 +45,8 @@ func unsafeData()  {
 	fmt.Println(ptrIntAlign,ptrIntSize)
 }
 
-
-type SliceInt []int
+type typeAlias = int	//类型别名
+type SliceInt []int		//定义一个新的类型名称
 
 func (s SliceInt) Sum() int {
 	sum := 0
@@ -69,8 +69,8 @@ func BasicType()  {
 	var s SliceInt = []int{1, 2, 3, 4}
 	println(s.Sum())
 	println(SliceInt_Sum(s))
-
 }
+
 
 
 
