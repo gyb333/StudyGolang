@@ -5,7 +5,7 @@ import (
 	"math/big"
 	"fmt"
 	"sync"
-)
+	)
 
 func FibonacciMain() {
 	var n, Number = 1, 100000
@@ -90,7 +90,8 @@ func fibonacciChan(n int) (result int) {
 
 func FibonacciChanBig(n int) (result *big.Int) {
 	result = big.NewInt(0)
-	channel := make(chan *big.Int, 30)
+	if n==0 {return}
+	channel := make(chan *big.Int)
 	quit := make(chan bool)
 	go func() {
 		for i := 0; i < n; i++ {

@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5378eaf9-fd24-443b-81a8-2dee3e07966b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/example/strings_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/unit_performance/fibonacci_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/algorithm/maze/maze.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/crawler/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/unit_performance/cpu.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/unit_performance/unit_performance.test.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/basic/study_fibonacci.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/basic/study_fibonacci.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/basic/study_oop.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/basic/study_oop.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/basic/study_type.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/basic/study_type.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/unit_performance/fibonacci_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/unit_performance/fibonacci_test.go" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,26 +67,79 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="1946258501">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.26" value="1" />
+          <entry key="project.open.time.36" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="go" value="836" />
+          <entry key="md" value="62" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Go" value="836" />
+          <entry key="Markdown" value="62" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="go" value="7" />
+          <entry key="md" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Go" value="7" />
+          <entry key="Markdown" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/unit_performance/fibonacci_test.go">
+        <entry file="file://$PROJECT_DIR$/src/crawler/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
-              <folding>
-                <element signature="e#26#62#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-828">
+              <caret line="10" column="51" lean-forward="true" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/basic/study_fibonacci.go">
+        <entry file="file://E:/go/src/golang.org/x/net/html/charset/charset.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="158" column="4" selection-start-line="158" selection-start-column="4" selection-end-line="158" selection-end-column="4" />
+            <state relative-caret-position="1368">
+              <caret line="51" column="68" selection-start-line="51" selection-start-column="68" selection-end-line="51" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://E:/go/src/golang.org/x/text/encoding/encoding.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="10" column="55" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="200">
+                <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -164,6 +219,10 @@
         <option value="$PROJECT_DIR$/src/test/unit_performance/strings_test.go" />
         <option value="$PROJECT_DIR$/src/basic/study_fibonacci.go" />
         <option value="$PROJECT_DIR$/src/test/unit_performance/fibonacci_test.go" />
+        <option value="$PROJECT_DIR$/src/algorithm/maze.go" />
+        <option value="$PROJECT_DIR$/src/algorithm/maze/maze.go" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/crawler/main.go" />
       </list>
     </option>
   </component>
@@ -193,9 +252,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -205,61 +262,53 @@
             </path>
             <path>
               <item name="StudyGolang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StudyGolang" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StudyGolang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StudyGolang" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="basic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StudyGolang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StudyGolang" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StudyGolang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StudyGolang" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="unit_performance" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
             <path>
               <item name="StudyGolang" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="GOPATH &lt;StudyGolang&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
+            </path>
+            <path>
+              <item name="StudyGolang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="GOPATH &lt;StudyGolang&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1577439666832" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1577610941243" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\StudyGolang\src\test" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Work\StudyGolang\src\algorithm\maze" />
       <recent name="D:\StudyGolang\src\test\unit" />
       <recent name="D:\StudyGolang\src\test" />
       <recent name="D:\StudyGolang\src\package" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\StudyGolang\src\test" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -274,39 +323,50 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Test.TestFibonacci in fibonacci_test.go">
+  <component name="RunManager" selected="Go Build.go build main.go">
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="StudyGolang" />
       <working_directory value="$PROJECT_DIR$" />
       <go_parameters value="-i" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/src/main.go" />
+      <filePath value="$PROJECT_DIR$/src/crawler/main.go" />
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="ExampleFields in example_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="BenchmarkFibonacci in fibonacci_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="StudyGolang" />
-      <working_directory value="$PROJECT_DIR$/src/test" />
+      <working_directory value="$PROJECT_DIR$/src/test/unit_performance" />
       <go_parameters value="-i" />
-      <framework value="gotest" />
+      <framework value="gobench" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/src/test/example_test.go" />
-      <pattern value="^ExampleFields$" />
+      <filePath value="$PROJECT_DIR$/src/test/unit_performance/fibonacci_test.go" />
+      <pattern value="^BenchmarkFibonacci$" />
       <method v="2" />
     </configuration>
-    <configuration name="ExampleFields in strings_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="BenchmarkFibonacciChanBig in fibonacci_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="StudyGolang" />
-      <working_directory value="$PROJECT_DIR$/src/test" />
+      <working_directory value="$PROJECT_DIR$/src/test/unit_performance" />
       <go_parameters value="-i" />
-      <framework value="gotest" />
+      <framework value="gobench" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/src/test/strings_test.go" />
-      <pattern value="^ExampleFields$" />
+      <filePath value="$PROJECT_DIR$/src/test/unit_performance/fibonacci_test.go" />
+      <pattern value="^BenchmarkFibonacciChanBig$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestFibonacci in fibonacci_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="BenchmarkFibonacciClosure in fibonacci_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="StudyGolang" />
+      <working_directory value="$PROJECT_DIR$/src/test/unit_performance" />
+      <go_parameters value="-i" />
+      <framework value="gobench" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/src/test/unit_performance/fibonacci_test.go" />
+      <pattern value="^BenchmarkFibonacciClosure$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestFibonacciChanBig in fibonacci_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="StudyGolang" />
       <working_directory value="$PROJECT_DIR$/src/test/unit_performance" />
       <go_parameters value="-i" />
@@ -314,34 +374,23 @@
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$/src/test/unit_performance/fibonacci_test.go" />
-      <pattern value="^TestFibonacci$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestFibonacciRecursion in fibonacci_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="StudyGolang" />
-      <working_directory value="$PROJECT_DIR$/src/test/unit_performance" />
-      <go_parameters value="-i" />
-      <framework value="gotest" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/src/test/unit_performance/fibonacci_test.go" />
-      <pattern value="^TestFibonacciRecursion$" />
+      <pattern value="^TestFibonacciChanBig$" />
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Go Test.TestFibonacciChanBig in fibonacci_test.go" />
+      <item itemvalue="Go Test.BenchmarkFibonacci in fibonacci_test.go" />
+      <item itemvalue="Go Test.BenchmarkFibonacciClosure in fibonacci_test.go" />
+      <item itemvalue="Go Test.BenchmarkFibonacciChanBig in fibonacci_test.go" />
       <item itemvalue="Go Build.go build main.go" />
-      <item itemvalue="Go Test.ExampleFields in example_test.go" />
-      <item itemvalue="Go Test.ExampleFields in strings_test.go" />
-      <item itemvalue="Go Test.TestFibonacci in fibonacci_test.go" />
-      <item itemvalue="Go Test.TestFibonacciRecursion in fibonacci_test.go" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.TestFibonacci in fibonacci_test.go" />
-        <item itemvalue="Go Test.TestFibonacciRecursion in fibonacci_test.go" />
-        <item itemvalue="Go Test.ExampleFields in strings_test.go" />
-        <item itemvalue="Go Test.ExampleFields in example_test.go" />
         <item itemvalue="Go Build.go build main.go" />
+        <item itemvalue="Go Test.BenchmarkFibonacciChanBig in fibonacci_test.go" />
+        <item itemvalue="Go Test.BenchmarkFibonacciClosure in fibonacci_test.go" />
+        <item itemvalue="Go Test.BenchmarkFibonacci in fibonacci_test.go" />
+        <item itemvalue="Go Test.TestFibonacciChanBig in fibonacci_test.go" />
       </list>
     </recent_temporary>
   </component>
@@ -357,28 +406,13 @@
       <updated>1576737642815</updated>
       <workItem from="1576737644381" duration="28747000" />
       <workItem from="1577082285562" duration="58173000" />
+      <workItem from="1577510428734" duration="2832000" />
+      <workItem from="1577542424546" duration="12171000" />
+      <workItem from="1577608789876" duration="1687000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestFibonacci_in_fibonacci_test_go - 2019.12.27 at 17h 31m 42s.xml">
-      <configuration name="TestFibonacci in fibonacci_test.go" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestFibonacci_in_fibonacci_test_go - 2019.12.27 at 17h 33m 06s.xml">
-      <configuration name="TestFibonacci in fibonacci_test.go" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestFibonacciRecursion_in_fibonacci_test_go - 2019.12.27 at 17h 35m 01s.xml">
-      <configuration name="TestFibonacciRecursion in fibonacci_test.go" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestFibonacciRecursion_in_fibonacci_test_go - 2019.12.27 at 17h 35m 22s.xml">
-      <configuration name="TestFibonacciRecursion in fibonacci_test.go" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestFibonacciRecursion_in_fibonacci_test_go - 2019.12.27 at 17h 37m 28s.xml">
-      <configuration name="TestFibonacciRecursion in fibonacci_test.go" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestFibonacciRecursion_in_fibonacci_test_go - 2019.12.27 at 17h 37m 53s.xml">
-      <configuration name="TestFibonacciRecursion in fibonacci_test.go" configurationId="GoTestRunConfiguration" />
-    </history-entry>
     <history-entry file="TestFibonacciRecursion_in_fibonacci_test_go - 2019.12.27 at 17h 38m 37s.xml">
       <configuration name="TestFibonacciRecursion in fibonacci_test.go" configurationId="GoTestRunConfiguration" />
     </history-entry>
@@ -391,9 +425,27 @@
     <history-entry file="TestFibonacci_in_fibonacci_test_go - 2019.12.27 at 17h 40m 52s.xml">
       <configuration name="TestFibonacci in fibonacci_test.go" configurationId="GoTestRunConfiguration" />
     </history-entry>
+    <history-entry file="TestFibonacciClosure_in_fibonacci_test_go - 2019.12.28 at 19h 06m 28s.xml">
+      <configuration name="TestFibonacciClosure in fibonacci_test.go" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestFibonacciChanBig_in_fibonacci_test_go - 2019.12.28 at 19h 07m 30s.xml">
+      <configuration name="TestFibonacciChanBig in fibonacci_test.go" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestFibonacciChanBig_in_fibonacci_test_go - 2019.12.28 at 19h 12m 14s.xml">
+      <configuration name="TestFibonacciChanBig in fibonacci_test.go" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="BenchmarkFibonacci_in_fibonacci_test_go - 2019.12.28 at 19h 23m 09s.xml">
+      <configuration name="BenchmarkFibonacci in fibonacci_test.go" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="BenchmarkFibonacciClosure_in_fibonacci_test_go - 2019.12.28 at 19h 24m 28s.xml">
+      <configuration name="BenchmarkFibonacciClosure in fibonacci_test.go" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="BenchmarkFibonacciChanBig_in_fibonacci_test_go - 2019.12.28 at 19h 25m 21s.xml">
+      <configuration name="BenchmarkFibonacciChanBig in fibonacci_test.go" configurationId="GoTestRunConfiguration" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86920000" />
+    <option name="totallyTimeSpent" value="103610000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -405,10 +457,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15991472" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15295629" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -417,13 +468,13 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4121475" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.45209175" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32928476" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.1556962" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.22132254" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -445,46 +496,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/Go/src/runtime/map.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="312" column="20" selection-start-line="312" selection-start-column="20" selection-end-line="312" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Go/src/runtime/map_benchmark_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5220" />
-      </provider>
-    </entry>
-    <entry file="file://C:/Go/src/runtime/internal/sys/stubs.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="9" column="30" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Go/src/math/copysign.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Go/src/runtime/map_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5365">
-          <caret line="66" column="15" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Go/src/runtime/slice_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="180" column="5" lean-forward="true" selection-start-line="180" selection-start-column="5" selection-end-line="180" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/millionlevel/payload.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
@@ -496,9 +507,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="438">
           <caret line="40" column="24" lean-forward="true" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
-          <folding>
-            <element signature="e#22#47#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -506,9 +514,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
           <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
-          <folding>
-            <element signature="e#22#50#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -516,9 +521,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3">
           <caret line="104" column="19" lean-forward="true" selection-start-line="104" selection-start-column="19" selection-end-line="104" selection-end-column="19" />
-          <folding>
-            <element signature="e#22#71#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -526,9 +528,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="348">
           <caret line="27" column="59" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="59" />
-          <folding>
-            <element signature="e#22#67#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -568,13 +567,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/basepack/study_strconv.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/basepack/study_bufio.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="29">
           <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
@@ -627,9 +619,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
           <caret line="239" column="37" selection-start-line="239" selection-start-column="37" selection-end-line="239" selection-end-column="37" />
-          <folding>
-            <element signature="e#10777#14987#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -668,20 +657,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/concurrent/concurrencyslower_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/basic/study_baseType.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="348">
           <caret line="12" column="56" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="56" />
-          <folding>
-            <element signature="e#15#42#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -717,9 +696,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-618">
           <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-          <folding>
-            <element signature="e#15#66#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -727,19 +703,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="783">
           <caret line="42" column="19" lean-forward="true" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
-          <folding>
-            <element signature="e#15#53#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/web.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" selection-start-column="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/web.go" />
     <entry file="file://$PROJECT_DIR$/src/basic/study_func.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-406">
@@ -751,9 +718,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="348">
           <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding>
-            <element signature="e#15#40#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -761,9 +725,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-291">
           <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="87" />
-          <folding>
-            <element signature="n#!!block;n#StudyStruct#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -785,9 +746,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="158">
           <caret line="74" column="10" selection-start-line="74" selection-start-column="10" selection-end-line="74" selection-end-column="10" />
-          <folding>
-            <element signature="e#15#42#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -798,20 +756,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/basic/array_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="2" selection-start-line="2" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/basic/array_test.go" />
     <entry file="file://$PROJECT_DIR$/src/basic/study_array.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="58">
           <caret line="8" column="20" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="20" />
-          <folding>
-            <element signature="e#15#42#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -822,20 +771,79 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/concurrent/concurrencyslower_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/basic/study_fibonacci.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="158" column="4" selection-start-line="158" selection-start-column="4" selection-end-line="158" selection-end-column="4" />
+        <state relative-caret-position="1548">
+          <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/basepack/study_bufio.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/unit_performance/fibonacci_test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+        <state relative-caret-position="-215">
+          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithm/maze/maze.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/go/src/golang.org/x/text/transform/transform.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4572">
+          <caret line="133" column="5" selection-start-line="133" selection-start-column="5" selection-end-line="133" selection-end-column="5" />
           <folding>
-            <element signature="e#26#62#0" expanded="true" />
+            <element signature="e#474#525#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="200">
+            <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/go/src/golang.org/x/net/html/charset/charset.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1368">
+          <caret line="51" column="68" selection-start-line="51" selection-start-column="68" selection-end-line="51" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/go/src/golang.org/x/text/encoding/encoding.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="10" column="55" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/crawler/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-828">
+          <caret line="10" column="51" lean-forward="true" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
         </state>
       </provider>
     </entry>
