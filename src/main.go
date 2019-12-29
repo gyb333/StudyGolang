@@ -19,5 +19,6 @@ func main()  {
 	//basic.ReflectMain()
 	//basic.StudyPointer()
 	//basic.StudySelect()
-	basic.StudyRegex()
+	//basic.StudyRegex()
+	basic.GoRoutineMain()
 }
