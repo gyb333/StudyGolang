@@ -14,10 +14,10 @@ func main()  {
 	//basic.BaseArray()
 	//basic.FuncMain()
 	//basic.StudyStruct()
-	basic.OOPMain()
+	//basic.OOPMain()
 	//basic.InterfaceMain()
 	//basic.ReflectMain()
 	//basic.StudyPointer()
 	//basic.StudySelect()
-
+	basic.StudyRegex()
 }
