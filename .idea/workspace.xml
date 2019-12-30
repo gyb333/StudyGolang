@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5378eaf9-fd24-443b-81a8-2dee3e07966b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/algorithm/maze/maze.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/basic/study_selects.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/algorithm/maze/maze.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/maze/maze.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/basic/study_chan.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/basic/study_chan.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/basic/study_fibonacci.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/basic/study_fibonacci.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.go" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -114,8 +107,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/algorithm/maze/maze.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="155" column="25" lean-forward="true" selection-start-line="154" selection-start-column="18" selection-end-line="155" selection-end-column="25" />
+            <state relative-caret-position="457">
+              <caret line="158" column="15" lean-forward="true" selection-start-line="153" selection-start-column="14" selection-end-line="158" selection-end-column="15" />
               <folding>
                 <element signature="e#14#37#0" expanded="true" />
                 <element signature="n#!!block;n#readMaze#0" />
@@ -238,7 +231,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="464" />
     <option name="y" value="92" />
     <option name="width" value="1490" />
@@ -294,7 +287,7 @@
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1577699445166" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1577699475827" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Module.GOPATH.is.expanded" value="false" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
@@ -414,7 +407,7 @@
       <workItem from="1577542424546" duration="12171000" />
       <workItem from="1577608789876" duration="12292000" />
       <workItem from="1577670156297" duration="71000" />
-      <workItem from="1577670327411" duration="20421000" />
+      <workItem from="1577670327411" duration="20451000" />
     </task>
     <servers />
   </component>
@@ -451,7 +444,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136188000" />
+    <option name="totallyTimeSpent" value="136218000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -840,8 +833,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/algorithm/maze/maze.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="155" column="25" lean-forward="true" selection-start-line="154" selection-start-column="18" selection-end-line="155" selection-end-column="25" />
+        <state relative-caret-position="457">
+          <caret line="158" column="15" lean-forward="true" selection-start-line="153" selection-start-column="14" selection-end-line="158" selection-end-column="15" />
           <folding>
             <element signature="e#14#37#0" expanded="true" />
             <element signature="n#!!block;n#readMaze#0" />

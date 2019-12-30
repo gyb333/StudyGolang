@@ -151,12 +151,12 @@ func walkLine(steps [][]int,start, end Point){
 		points=points[1:]
 		if cur ==end{
 			fmt.Println(cur)
-			for _, dir := range dirs {
-				//next := cur.add(dir)
-				//points.
-
-
-			}
+			//for _, dir := range dirs {
+			//	//next := cur.add(dir)
+			//	//points.
+			//
+			//
+			//}
 		}
 
 
