@@ -20,5 +20,7 @@ func main()  {
 	//basic.StudyPointer()
 	//basic.StudySelect()
 	//basic.StudyRegex()
-	basic.GoRoutineMain()
+	//basic.GoRoutineMain()
+	//basic.ChanMain()
+	basic.SelectMain()
 }

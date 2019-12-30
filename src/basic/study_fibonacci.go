@@ -1,61 +1,8 @@
 package basic
 
 import (
-	"time"
 	"math/big"
-	"fmt"
-	"sync"
-	)
-
-func FibonacciMain() {
-	var n, Number = 1, 100000
-	var wg sync.WaitGroup
-	wg.Add(3)
-	go func() {
-		fibonacciTest(n, Number)
-		wg.Done()
-	}()
-	go func() {
-		fibonacciClosureTest(n, Number)
-		wg.Done()
-	}()
-
-	go func() {
-		fibonacciChanTest(n, Number)
-		wg.Done()
-	}()
-	wg.Wait()
-}
-
-
-func fibonacciTest(n, Number int) {
-	start := time.Now()
-	var result *big.Int
-	for i := 0; i < n; i++ {
-		result = Fibonacci(Number)
-	}
-	fmt.Println("fibonacci 		  took this amount of time:", time.Since(start).Seconds()/float64(n), "s   ", result)
-}
-
-func fibonacciClosureTest(n, Number int) {
-	start := time.Now()
-	var result *big.Int
-	for i := 0; i < n; i++ {
-		result = FibonacciClosure(Number)
-	}
-	fmt.Println("fibonacci Closure took this amount of time:", time.Since(start).Seconds()/float64(n), "s   ", result)
-}
-
-func fibonacciChanTest(n, Number int) {
-	start := time.Now()
-	var result *big.Int
-	for i := 0; i <= n; i++ {
-		//start := time.Now()
-		result = FibonacciChanBig(Number)
-		//fmt.Printf("fibonacci(%d) Chan took this amount of time:%fs,result:%d\n", i,time.Since(start).Seconds(),  result)
-	}
-	fmt.Println("fibonacci Chan    took this amount of time:", time.Since(start).Seconds()/float64(n), "s   ", result)
-}
+)
 
 func Fibonacci(n int) *big.Int {
 	x, y := big.NewInt(0), big.NewInt(1)
@@ -90,7 +37,9 @@ func fibonacciChan(n int) (result int) {
 
 func FibonacciChanBig(n int) (result *big.Int) {
 	result = big.NewInt(0)
-	if n==0 {return}
+	if n == 0 {
+		return
+	}
 	channel := make(chan *big.Int)
 	quit := make(chan bool)
 	go func() {
