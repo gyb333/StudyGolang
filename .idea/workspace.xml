@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5378eaf9-fd24-443b-81a8-2dee3e07966b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/algorithm/maze/maze.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/maze/maze.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithm/maze/maze.in" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/maze/maze.in" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -69,28 +71,33 @@
     <session id="1946258501">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.36" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="1904" />
+          <entry key="go" value="2648" />
+          <entry key="in" value="52" />
           <entry key="md" value="64" />
+          <entry key="txt" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="1904" />
+          <entry key="Go" value="2648" />
           <entry key="Markdown" value="64" />
+          <entry key="PLAIN_TEXT" value="65" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="go" value="33" />
+          <entry key="in" value="2" />
           <entry key="md" value="1" />
         </counts>
       </usages-collector>
@@ -98,39 +105,33 @@
         <counts>
           <entry key="Go" value="33" />
           <entry key="Markdown" value="1" />
+          <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/algorithm/maze/maze.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="158" column="15" lean-forward="true" selection-start-line="153" selection-start-column="14" selection-end-line="158" selection-end-column="15" />
+            <state relative-caret-position="219">
+              <caret line="89" column="24" lean-forward="true" selection-start-line="89" selection-start-column="24" selection-end-line="89" selection-end-column="24" />
               <folding>
-                <element signature="e#14#37#0" expanded="true" />
                 <element signature="n#!!block;n#readMaze#0" />
+                <element signature="n#!!block;n#add#0" />
+                <element signature="n#!!block;n#getValue#0" />
+                <element signature="e#1083#1133#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://C:/Go/src/runtime/panic.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="851" column="29" lean-forward="true" selection-start-line="851" selection-start-column="29" selection-end-line="851" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/algorithm/maze/maze.in">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="2" selection-start-column="2" selection-end-column="2" />
+            <state relative-caret-position="288">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -214,8 +215,8 @@
         <option value="$PROJECT_DIR$/src/basic/study_chan.go" />
         <option value="$PROJECT_DIR$/src/main.go" />
         <option value="$PROJECT_DIR$/src/basic/study_selects.go" />
-        <option value="$PROJECT_DIR$/src/algorithm/maze/maze.in" />
         <option value="$PROJECT_DIR$/src/algorithm/maze/maze.go" />
+        <option value="$PROJECT_DIR$/src/algorithm/maze/maze.in" />
       </list>
     </option>
   </component>
@@ -232,10 +233,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="464" />
-    <option name="y" value="92" />
+    <option name="x" value="40" />
+    <option name="y" value="40" />
     <option name="width" value="1490" />
-    <option name="height" value="924" />
+    <option name="height" value="920" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -245,6 +246,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -278,16 +282,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1577699475827" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1577719557192" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Module.GOPATH.is.expanded" value="false" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
@@ -298,18 +299,19 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Work\StudyGolang\src\algorithm\maze" />
+      <recent name="D:\StudyGolang\src\algorithm\maze" />
+      <recent name="D:\StudyGolang\src\test" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Work\StudyGolang\src\algorithm\maze" />
       <recent name="D:\StudyGolang\src\test\unit" />
       <recent name="D:\StudyGolang\src\test" />
       <recent name="D:\StudyGolang\src\package" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\StudyGolang\src\algorithm\maze" />
-      <recent name="D:\StudyGolang\src\test" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -408,6 +410,7 @@
       <workItem from="1577608789876" duration="12292000" />
       <workItem from="1577670156297" duration="71000" />
       <workItem from="1577670327411" duration="20451000" />
+      <workItem from="1577706596282" duration="10740000" />
     </task>
     <servers />
   </component>
@@ -444,7 +447,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136218000" />
+    <option name="totallyTimeSpent" value="146958000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -456,10 +459,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49909583" visible="true" weight="0.12473348" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49909583" visible="true" weight="0.12596402" />
       <window_info id="Structure" order="1" sideWeight="0.50180507" side_tool="true" weight="0.15231362" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -467,9 +470,9 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4993573" visible="true" weight="0.25813448" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32928476" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4993573" weight="0.33063427" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3994602" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Database Changes" order="6" show_stripe_button="false" />
@@ -494,6 +497,20 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="breakpointCondition">
+      <expression>
+        <expression-string>curStemps==13</expression-string>
+        <language-id>go</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>curStemps=13</expression-string>
+        <language-id>go</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://C:/Go/src/bytes/bytes.go">
@@ -679,9 +696,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="e#3411#3903#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -724,9 +738,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
           <caret line="73" selection-start-line="73" selection-end-line="75" selection-end-column="23" />
-          <folding>
-            <element signature="e#26#73#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -744,9 +755,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
           <caret line="76" column="15" lean-forward="true" selection-start-line="76" selection-start-column="15" selection-end-line="76" selection-end-column="15" />
-          <folding>
-            <element signature="e#15#37#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -754,9 +762,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="87">
           <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding>
-            <element signature="e#14#176#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -774,13 +779,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Go/src/golang.org/x/tools/go/ssa/interp/testdata/src/fmt/fmt.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://D:/Go/src/golang.org/x/tools/go/ssa/interp/testdata/src/fmt/fmt.go" />
     <entry file="file://$PROJECT_DIR$/src/basic/study_select.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="638">
@@ -792,10 +791,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="485">
           <caret line="52" column="33" lean-forward="true" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
-          <folding>
-            <element signature="e#15#89#0" expanded="true" />
-            <element signature="n#!!block;n#baseChan#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -810,35 +805,33 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="348">
           <caret line="54" column="15" lean-forward="true" selection-start-line="54" selection-start-column="15" selection-end-line="54" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Go/src/runtime/panic.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30492">
+          <caret line="851" column="29" selection-start-line="851" selection-start-column="29" selection-end-line="851" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithm/maze/maze.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="89" column="24" lean-forward="true" selection-start-line="89" selection-start-column="24" selection-end-line="89" selection-end-column="24" />
           <folding>
-            <element signature="e#15#46#0" expanded="true" />
-            <element signature="n#!!block;n#createWork#0" />
+            <element signature="n#!!block;n#readMaze#0" />
+            <element signature="n#!!block;n#add#0" />
+            <element signature="n#!!block;n#getValue#0" />
+            <element signature="e#1083#1133#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/algorithm/maze/maze.in">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="2" selection-start-column="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Go/src/runtime/panic.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="851" column="29" lean-forward="true" selection-start-line="851" selection-start-column="29" selection-end-line="851" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/algorithm/maze/maze.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="158" column="15" lean-forward="true" selection-start-line="153" selection-start-column="14" selection-end-line="158" selection-end-column="15" />
-          <folding>
-            <element signature="e#14#37#0" expanded="true" />
-            <element signature="n#!!block;n#readMaze#0" />
-          </folding>
+        <state relative-caret-position="288">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
