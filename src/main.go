@@ -8,7 +8,7 @@ func main()  {
 
 	//basic.StudyRune()
 	//basic.StudyArray()
-	//basic.StudyString()
+	basic.StudyString()
 	//basic.StudySlice()
 	//basic.StudyMap()
 	//basic.BaseArray()
@@ -22,5 +22,5 @@ func main()  {
 	//basic.StudyRegex()
 	//basic.GoRoutineMain()
 	//basic.ChanMain()
-	basic.SelectMain()
+	//basic.SelectMain()
 }

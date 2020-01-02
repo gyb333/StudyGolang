@@ -14,10 +14,10 @@ import (
 func StudyString() {
 
 	basicString()
-	stringStruct()
-	stringToByteSlice()
-	stringToRuneSlice()
-	stringJoin()
+	//stringStruct()
+	//stringToByteSlice()
+	//stringToRuneSlice()
+	//stringJoin()
 
 
 }
@@ -31,6 +31,15 @@ func basicString() {
 	for i, v := range str {
 		fmt.Printf("%d\t%c\t%q\t%d\t%#x \n", i, v, v, v, v)
 	}
+
+	ss:=str[0:]
+	fmt.Printf("%p,%T,%d,%v,%s\n", &ss, ss, unsafe.Sizeof(""), ss, ss)
+	fmt.Printf("%d,%d\n", len(ss), utf8.RuneCountInString(ss))
+
+	bs :=make([]byte,len(ss))
+	copy(bs,ss)
+	fmt.Printf("%p,%T,%d,%v,%s\n", &bs, bs, unsafe.Sizeof(""), bs, bs)
+
 }
 
 
