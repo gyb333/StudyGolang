@@ -1,7 +1,12 @@
 package engine
 
-import "log"
+import (
+	"log"
+	"../fetcher"
+)
+
 //https://github.com/chao2015/go-crawler
+
 type ConcurrentEngine struct {
 	Scheduler   Scheduler
 	WorkerCount int

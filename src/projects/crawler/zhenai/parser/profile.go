@@ -5,8 +5,7 @@ import (
 	"../../model"
 	"regexp"
 	"strconv"
-	"fmt"
-)
+	)
 
 // \d就是所有的数字0-9
 //年龄<div data-v-8b1eac0c="" class="m-btn purple">未婚</div>
@@ -39,24 +38,24 @@ var idUrlRe = regexp.MustCompile(`http://album.zhenai.com/u/([\d]+)`)
 // 用户解析器
 // 得到用户详情页的各种结构化数据
 func ParseProfile(contents []byte, url string, name string) engine.ParseResult {
-	fmt.Printf("%s\n",contents)
+
 
 	profile := model.Profile{}
 	profile.Name = name
 
-	profile.Age = extractInt(contents, ageRe)
-	profile.Height = extractInt(contents, heightRe)
-	profile.Weight = extractInt(contents, weightRe)
-
-	profile.Income = extractString(contents, incomeRe)
-	profile.Gender = extractString(contents, genderRe)
-	profile.Car = extractString(contents, carRe)
-	profile.Education = extractString(contents, educationRe)
-	profile.NativePlace = extractString(contents, nativePlaceRe)
-	profile.House = extractString(contents, houseRe)
-	profile.Marriage = extractString(contents, marriageRe)
-	profile.Occupation = extractString(contents, occupationRe)
-	profile.Constellation = extractString(contents, constellationRe)
+	//profile.Age = extractInt(contents, ageRe)
+	//profile.Height = extractInt(contents, heightRe)
+	//profile.Weight = extractInt(contents, weightRe)
+	//
+	//profile.Income = extractString(contents, incomeRe)
+	//profile.Gender = extractString(contents, genderRe)
+	//profile.Car = extractString(contents, carRe)
+	//profile.Education = extractString(contents, educationRe)
+	//profile.NativePlace = extractString(contents, nativePlaceRe)
+	//profile.House = extractString(contents, houseRe)
+	//profile.Marriage = extractString(contents, marriageRe)
+	//profile.Occupation = extractString(contents, occupationRe)
+	//profile.Constellation = extractString(contents, constellationRe)
 
 	result := engine.ParseResult{
 		Items: []engine.Item{
@@ -69,14 +68,14 @@ func ParseProfile(contents []byte, url string, name string) engine.ParseResult {
 		},
 	}
 
-	//matches := guessRe.FindAllSubmatch(contents, -1)
-	//for _, m := range matches {
-	//	result.Requests = append(result.Requests,
-	//		engine.Request{
-	//			Url:        string(m[1]),
-	//			ParserFunc: ProfileParser(string(m[2])),
-	//		})
-	//}
+	matches := guessRe.FindAllSubmatch(contents, -1)
+	for _, m := range matches {
+		result.Requests = append(result.Requests,
+			engine.Request{
+				Url:        string(m[1]),
+				ParserFunc: ProfileParser(string(m[2])),
+			})
+	}
 
 	return result
 }
