@@ -39,6 +39,10 @@ func baseInterface()  {
 		//it.Ping()
 		it.Pang()
 	}
+
+
+	var i Inter = &St{}
+	i.Pang()
 }
 
 
