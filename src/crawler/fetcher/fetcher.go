@@ -25,10 +25,14 @@ func Fetch(url string)([]byte,error)  {
 	// 查看自己浏览器中的User-Agent信息（检查元素->Network->User-Agent）
 	req.Header.Set("User-Agent", "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36")
 	resp, err := client.Do(req)
+
 	if err != nil {
 		log.Fatalln(err)
+		return nil,err
 	}
 	defer resp.Body.Close()
+
+
 	if resp.StatusCode!=http.StatusOK{
 		return nil,fmt.Errorf("error:status code %d",resp.StatusCode)
 	}

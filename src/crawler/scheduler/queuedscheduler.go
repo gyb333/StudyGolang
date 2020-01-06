@@ -7,12 +7,16 @@ type QueuedScheduler  struct {
 	workerChan  chan chan engine.Request
 }
 
+func (s *QueuedScheduler) WorkerChan() chan engine.Request {
+	return make(chan engine.Request)
+}
+
 func (s *QueuedScheduler) WorkerReady(w chan engine.Request) {
 	s.workerChan <- w
 }
 
-func (s *QueuedScheduler ) Submit(in chan engine.Request,request engine.Request){
-	go func(){in <-request}()
+func (s *QueuedScheduler ) Submit(request engine.Request){
+	go func(){s.requestChan <-request}()
 }
 func (s *QueuedScheduler) Run() {
 	s.workerChan = make(chan chan engine.Request)

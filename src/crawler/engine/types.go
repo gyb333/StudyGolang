@@ -1,6 +1,5 @@
 package engine
 
-
 type ParseResult struct {
 	Requests []Request
 	Items []interface{}
@@ -22,6 +21,13 @@ type Enginer interface {
 
 //接口
 type Scheduler interface {
-	Submit(in chan Request,request Request)
-	//ConfigureMasterWorkerChan(chan Request)
+	Submit(request Request)
+	ReadyNotifier
+	Run()
+	WorkerChan() chan Request
+}
+
+//接口
+type ReadyNotifier interface {
+	WorkerReady(chan Request)
 }
