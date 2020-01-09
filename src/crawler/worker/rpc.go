@@ -10,8 +10,7 @@ func (CrawlService) Process(req Request, result *ParseResult) error {
 	if err != nil {
 		return err
 	}
-
-	engineRes, err := engine.Work(engineReq)
+	engineRes, err := engine.FetchWork(engineReq)
 	if err != nil {
 		return err
 	}

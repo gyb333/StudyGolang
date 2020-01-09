@@ -21,10 +21,12 @@ var (
 
 	WorkerPort0   = 5566 //Worker
 
+	ItemSaverPort =":7788"
 
-	ParseCity = "ParseCity"
-	ParseCityList = "ParseCityList"
-	ParseProfile = "ParseProfile"
+
+	CityParser = "CityParser"
+	CityListParser = "CityListParser"
+	ProfileParser = "ProfileParser"
 	NilParser = "NilParser"
 
 	ElasticIndex = "dating_profile"

@@ -5,7 +5,17 @@ import (
 	"crawler/fetcher"
 )
 
-func Work(request Request) (ParseResult,error) {
+type Worker struct {
+
+}
+
+func (Worker)FetchRequest(request Request) (ParseResult,error) {
+	return  FetchWork(request)
+
+}
+
+
+func FetchWork(request Request) (ParseResult,error) {
 	log.Printf("Fetching %s",request.Url)
 	body,err:=fetcher.Fetch(request.Url)
 	if err!=nil{

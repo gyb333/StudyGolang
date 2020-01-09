@@ -7,6 +7,7 @@ import (
 	"crawler/scheduler"
 	"crawler/config"
 
+	"crawler/worker"
 )
 
 
@@ -16,6 +17,9 @@ var url = config.Url
 var cityUrl = config.CityUrl
 
 var profileUrl = config.ProfileUrl
+var hosts =[]int{
+	9000,9001,9002,9003,
+}
 
 func main() {
 	//Simple()
@@ -23,14 +27,19 @@ func main() {
 }
 
 func ConCurrent() {
-	//itemChan, err := persist.ItemPrint(":7788")
-	//if err !=nil{
-	//	return
-	//}
+	itemChan, err := persist.ItemPrint(config.ItemSaverPort)
+	if err !=nil{
+		return
+	}
 	engine.ConCurrentEngine{
 		Scheduler:   &scheduler.QueuedScheduler{},
-		WorkerCount: 10,
-		ItemChan:  persist.SimpleItemPrint(),// itemChan ,
+		WorkerCount: 100,
+		ItemChan:   itemChan ,
+		//ItemChan:  persist.SimpleItemPrint(),// itemChan ,
+		//Worker: engine.Worker{},
+		Worker:worker.RpcWorker{
+			WorkChan:worker.CreatWorkerPool(hosts),
+		},
 	}.Run(
 		engine.Request{
 			Url:    url,

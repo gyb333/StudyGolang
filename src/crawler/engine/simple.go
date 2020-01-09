@@ -6,6 +6,7 @@ import (
 
 type SimpleEngine struct {
 	ItemChan chan Item
+	Worker RequestFetcher
 }
 
 func (s SimpleEngine) Run(seeds ...Request){
@@ -15,7 +16,7 @@ func (s SimpleEngine) Run(seeds ...Request){
 		request:=requests[0]
 		requests=requests[1:]
 		//log.Printf("%s",string(body))
-		parseResult,err:=Work(request)
+		parseResult,err:=s.Worker.FetchRequest(request)
 		if err!=nil{
 			log.Printf("Fetcher: error fetching url %s %v",request.Url,err)
 			continue

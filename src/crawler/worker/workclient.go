@@ -1,30 +1,53 @@
 package worker
 
 import (
-
 	"crawler/config"
-
-	"fmt"
-
-
+	"crawler/engine"
+			"net/rpc"
 	"utils"
-	"projects/crawler_distributed/worker"
-	"projects/crawler_distributed/engine"
+	"fmt"
+	"log"
 )
 
-func CreateProcessor() (engine.Processor, error) {
-	client, err := utils.NewClient(fmt.Sprintf(":%d", config.WorkerPort0))
-	if err != nil {
-		return nil, err
-	}
+type RpcWorker struct {
+	WorkChan chan *rpc.Client
+}
 
-	return func(req engine.Request) (engine.ParseResult, error) {
-		sReq := worker.SerializeRequest(req)
-		var sResult worker.ParseResult
-		err := client.Call(config.CrawlServiceRpc, sReq, &sResult)
-		if err != nil {
-			return engine.ParseResult{}, err
+func (w RpcWorker) FetchRequest(request engine.Request) (engine.ParseResult, error) {
+	//client, err := utils.NewClient(fmt.Sprintf(":%d", config.WorkerPort0))
+	//if err != nil {
+	//	return engine.ParseResult{}, err
+	//}
+	client :=<-w.WorkChan
+
+	sReq := SerializeRequest(request)
+	var sResult ParseResult
+	err := client.Call(config.CrawlServiceRpc, sReq, &sResult)
+	if err != nil {
+		return engine.ParseResult{}, err
+	}
+	return DeserializeResult(sResult), nil
+
+}
+
+func CreatWorkerPool(hosts []int) chan *rpc.Client{
+	var clients []*rpc.Client
+	for _,host:=range hosts{
+		client,err:=utils.NewClient(fmt.Sprintf(":%d", host))
+		if err!=nil{
+			log.Printf("Error connecting to %s %v\n",host,err)
+		}else{
+			log.Printf("Success Connecting to %s\n",host)
+			clients=append(clients,client)
 		}
-		return worker.DeserializeResult(sResult), nil
-	}, nil
+	}
+	out :=make(chan *rpc.Client)
+	go func(){
+		for {
+			for _, client := range clients {
+				out <- client
+			}
+		}
+	}()
+	return out
 }

@@ -4,13 +4,14 @@ type ConCurrentEngine struct {
 	Scheduler Scheduler
 	WorkerCount int
 	ItemChan chan Item
+	Worker RequestFetcher
 }
 
 func (e ConCurrentEngine) Run(seeds ...Request){
 	e.Scheduler.Run()
 	out := make(chan ParseResult)
 	for i := 0; i < e.WorkerCount; i++ {
-		createWorker(e.Scheduler.WorkerChan(),out, e.Scheduler)
+		e.CreateWorker(e.Scheduler.WorkerChan(),out, e.Scheduler)
 	}
 	//参数seeds的request，要分配任务
 	for _, request := range seeds {
@@ -30,22 +31,22 @@ func (e ConCurrentEngine) Run(seeds ...Request){
 
 		}
 
-		//for _, request := range result.Requests {
-		//	if isDuplicate(request.Url){
-		//		continue
-		//	}
-		//	e.Scheduler.Submit(request)
-		//}
+		for _, request := range result.Requests {
+			if isDuplicate(request.Url){
+				continue
+			}
+			e.Scheduler.Submit(request)
+		}
 	}
 }
 
-func createWorker(in chan Request,out chan ParseResult,ready  ReadyNotifier) {
+func (e ConCurrentEngine)CreateWorker(in chan Request,out chan ParseResult,ready  ReadyNotifier) {
 	go func() {
 		for {
 			//需要让scheduler知道已经就绪了
 			ready.WorkerReady(in)
 			request := <-in
-			result, err := Work(request)
+			result, err := e.Worker.FetchRequest(request)//Work(request)
 			if err != nil {
 				continue
 			}

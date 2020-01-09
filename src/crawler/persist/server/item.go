@@ -4,6 +4,7 @@ import (
 	"utils"
 	"log"
 		"crawler/engine"
+	"crawler/config"
 )
 
 type ItemPrintService struct {
@@ -17,5 +18,5 @@ func (s ItemPrintService) Save(item engine.Item, result *string) error {
 	return nil
 }
 func main() {
-	log.Fatal(utils.ServeRpc(":7788",ItemPrintService{}))
+	log.Fatal(utils.ServeRpc(config.ItemSaverPort,ItemPrintService{}))
 }

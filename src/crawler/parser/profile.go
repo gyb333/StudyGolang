@@ -33,7 +33,9 @@ func (p ProfileParser) Parse(contents []byte) engine.ParseResult {
 	return result
 }
 
-
+func (p ProfileParser) Serialize() (name string, args interface{}){
+	return "ProfileParser",[]string{p.Url,p.Name}
+}
 //解析json数据
 func parseJson(json []byte) (model.Profile,string) {
 	res, err := simplejson.NewJson(json)

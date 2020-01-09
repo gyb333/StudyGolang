@@ -19,7 +19,7 @@ type Request struct {
 
 type Parser interface {
 	Parse([]byte) ParseResult
-	//Serialize() (string, interface{})
+	Serialize() (string, interface{})
 }
 
 type Enginer interface {
@@ -38,4 +38,8 @@ type Scheduler interface {
 //接口
 type ReadyNotifier interface {
 	WorkerReady(chan Request)
+}
+
+type RequestFetcher interface {
+	FetchRequest(Request) (ParseResult,error)
 }
