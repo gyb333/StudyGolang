@@ -5,7 +5,7 @@ import (
 	)
 
 type SimpleEngine struct {
-	ItemChan chan interface{}
+	ItemChan chan Item
 }
 
 func (s SimpleEngine) Run(seeds ...Request){

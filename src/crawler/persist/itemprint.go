@@ -1,18 +1,19 @@
 package persist
 
-import "log"
+import (
+	"crawler/engine"
+	"log"
+)
 
-func ItemSaver() chan interface{} {
-	out := make(chan interface{})
-
+func SimpleItemPrint() chan engine.Item {
+	out := make(chan engine.Item)
 	go func() {
 		itemCount := 0
-		for{
+		for {
 			item := <-out
 			log.Printf("Item Saver: Got %d  item : %v", itemCount, item)
 			itemCount++
 		}
 	}()
 	return out
-
 }

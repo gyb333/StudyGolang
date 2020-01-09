@@ -5,13 +5,17 @@ import (
 	"crawler/parser"
 	"crawler/persist"
 	"crawler/scheduler"
+	"crawler/config"
+
 )
 
-var url = "https://www.zhenai.com/zhenghun"
 
-var cityUrl = "http://www.zhenai.com/zhenghun/aba"
 
-var profileUrl = "http://album.zhenai.com/u/1280064210"
+var url = config.Url
+
+var cityUrl = config.CityUrl
+
+var profileUrl = config.ProfileUrl
 
 func main() {
 	//Simple()
@@ -19,10 +23,14 @@ func main() {
 }
 
 func ConCurrent() {
+	//itemChan, err := persist.ItemPrint(":7788")
+	//if err !=nil{
+	//	return
+	//}
 	engine.ConCurrentEngine{
 		Scheduler:   &scheduler.QueuedScheduler{},
 		WorkerCount: 10,
-		ItemChan:    persist.ItemSaver(),
+		ItemChan:  persist.SimpleItemPrint(),// itemChan ,
 	}.Run(
 		engine.Request{
 			Url:    url,
@@ -41,16 +49,16 @@ func ConCurrent() {
 
 func Simple() {
 	engine.SimpleEngine{
-		ItemChan: persist.ItemSaver(),
+		ItemChan: persist.SimpleItemPrint(),
 	}.Run(
-		//engine.Request{
-		//	Url:    url,
-		//	Parser: parser.CityListParser{},
-		//},
 		engine.Request{
-			Url:    cityUrl,
-			Parser: parser.CityParser{},
+			Url:    url,
+			Parser: parser.CityListParser{},
 		},
+		//engine.Request{
+		//	Url:    cityUrl,
+		//	Parser: parser.CityParser{},
+		//},
 		//engine.Request{
 		//	Url:    profileUrl,
 		//	Parser: parser.ProfileParser{},

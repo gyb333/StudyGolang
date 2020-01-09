@@ -19,6 +19,7 @@ type Request struct {
 
 type Parser interface {
 	Parse([]byte) ParseResult
+	//Serialize() (string, interface{})
 }
 
 type Enginer interface {

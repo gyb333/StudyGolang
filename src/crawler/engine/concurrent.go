@@ -3,14 +3,13 @@ package engine
 type ConCurrentEngine struct {
 	Scheduler Scheduler
 	WorkerCount int
-	ItemChan chan interface{}
+	ItemChan chan Item
 }
 
 func (e ConCurrentEngine) Run(seeds ...Request){
 	e.Scheduler.Run()
 	out := make(chan ParseResult)
 	for i := 0; i < e.WorkerCount; i++ {
-		//createWorker(in, out) //创建worker
 		createWorker(e.Scheduler.WorkerChan(),out, e.Scheduler)
 	}
 	//参数seeds的request，要分配任务
@@ -25,18 +24,18 @@ func (e ConCurrentEngine) Run(seeds ...Request){
 	for {
 		result := <-out
 		for _, item := range result.Items {
-			go func(item interface{}) {
+			go func(item Item) {
 				e.ItemChan <- item
 			}(item)
 
 		}
 
-		for _, request := range result.Requests {
-			if isDuplicate(request.Url){
-				continue
-			}
-			e.Scheduler.Submit(request)
-		}
+		//for _, request := range result.Requests {
+		//	if isDuplicate(request.Url){
+		//		continue
+		//	}
+		//	e.Scheduler.Submit(request)
+		//}
 	}
 }
 
