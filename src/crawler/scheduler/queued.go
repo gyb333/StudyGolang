@@ -2,7 +2,7 @@ package scheduler
 
 import "crawler/engine"
 
-type QueuedScheduler  struct {
+type QueuedScheduler struct {
 	requestChan chan engine.Request
 	workerChan  chan chan engine.Request
 }
@@ -15,8 +15,8 @@ func (s *QueuedScheduler) WorkerReady(w chan engine.Request) {
 	s.workerChan <- w
 }
 
-func (s *QueuedScheduler ) Submit(request engine.Request){
-	go func(){s.requestChan <-request}()
+func (s *QueuedScheduler) Submit(request engine.Request) {
+	s.requestChan <- request
 }
 func (s *QueuedScheduler) Run() {
 	s.workerChan = make(chan chan engine.Request)

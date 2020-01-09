@@ -1,12 +1,5 @@
 package engine
 
-import (
-	"log"
-	"crawler/fetcher"
-
-
-)
-
 type ConCurrentEngine struct {
 	Scheduler Scheduler
 	WorkerCount int
@@ -22,6 +15,9 @@ func (e ConCurrentEngine) Run(seeds ...Request){
 	}
 	//参数seeds的request，要分配任务
 	for _, request := range seeds {
+		if isDuplicate(request.Url){
+			continue
+		}
 		e.Scheduler.Submit(request)
 	}
 
@@ -29,19 +25,22 @@ func (e ConCurrentEngine) Run(seeds ...Request){
 	for {
 		result := <-out
 		for _, item := range result.Items {
-			go func() {
+			go func(item interface{}) {
 				e.ItemChan <- item
-			}()
+			}(item)
+
 		}
 
 		for _, request := range result.Requests {
+			if isDuplicate(request.Url){
+				continue
+			}
 			e.Scheduler.Submit(request)
 		}
 	}
 }
 
 func createWorker(in chan Request,out chan ParseResult,ready  ReadyNotifier) {
-	//in := make(chan Request)
 	go func() {
 		for {
 			//需要让scheduler知道已经就绪了
@@ -57,52 +56,16 @@ func createWorker(in chan Request,out chan ParseResult,ready  ReadyNotifier) {
 }
 
 
-func (e ConCurrentEngine)SimpleRun(seeds ...Request)  {
-	//worker公用一个in，out
-	in:=make(chan Request)
-	out :=make(chan ParseResult)
-	for i:=0;i<e.WorkerCount;i++{
-		createSimpleWorker(in,out)
-	}
-	for _,request :=range seeds{
-		in <-request
-	}
-	itemCount := 0
-	//从out中获取result，对于item就打印即可，对于request，就继续分配
-	for {
-		result := <-out
-		for _, item := range result.Items {
-			log.Printf("Got %d  item : %v",itemCount, item)
-			itemCount++
-		}
 
-		for _, request := range result.Requests {
-			in <-request
-		}
+
+
+var visitedUrls = make(map[string]bool)
+
+func isDuplicate(url string) bool {
+	if visitedUrls[url] {
+		return true
 	}
-}
 
-//创建worker
-func createSimpleWorker(in chan Request, out chan ParseResult) {
-	go func() {
-		for {
-			request := <-in
-			result, err := Work(request)
-			if err != nil {
-				continue
-			}
-			out <- result
-		}
-	}()
-}
-
-func Work(request Request) (ParseResult,error) {
-	log.Printf("Fetching %s",request.Url)
-	body,err:=fetcher.Fetch(request.Url)
-	if err!=nil{
-		return ParseResult{},err
-	}
-	//log.Printf("%s",string(body))
-	return request.Parser.Parse(body),nil
-
+	visitedUrls[url] = true
+	return false
 }
