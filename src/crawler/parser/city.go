@@ -22,13 +22,13 @@ func (p CityParser) Parse (contents []byte) engine.ParseResult {
 	for _, c := range profiles {
 		name:=string(c[3])
 		url :=string(c[1])
-		userID:=string(c[2])
-		result.Items = append(result.Items, engine.Item{
-			Url:url ,
-			Type:"zhenai:city",
-			Id:userID,
-			Payload:name,
-		}) //用户名字
+		//userID:=string(c[2])
+		//result.Items = append(result.Items, engine.Item{
+		//	Url:url ,
+		//	Type:"zhenai:city",
+		//	Id:userID,
+		//	Payload:name,
+		//}) //用户名字
 
 		result.Requests = append(result.Requests, engine.Request{
 			Url: url       ,

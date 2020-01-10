@@ -1,13 +1,13 @@
-package main
+package engine
 
 import (
-	"crawler/engine"
 	"crawler/parser"
 	"crawler/persist"
 	"crawler/scheduler"
 	"crawler/config"
 
 	"crawler/worker"
+
 )
 
 
@@ -18,7 +18,7 @@ var cityUrl = config.CityUrl
 
 var profileUrl = config.ProfileUrl
 var hosts =[]int{
-	9000,9001,9002,9003,
+	9000,9001,9002,9003,9004,
 }
 
 func main() {
@@ -31,9 +31,9 @@ func ConCurrent() {
 	if err !=nil{
 		return
 	}
-	engine.ConCurrentEngine{
+	ConCurrentEngine{
 		Scheduler:   &scheduler.QueuedScheduler{},
-		WorkerCount: 100,
+		WorkerCount: 10,
 		ItemChan:   itemChan ,
 		//ItemChan:  persist.SimpleItemPrint(),// itemChan ,
 		//Worker: engine.Worker{},
@@ -41,7 +41,7 @@ func ConCurrent() {
 			WorkChan:worker.CreatWorkerPool(hosts),
 		},
 	}.Run(
-		engine.Request{
+		Request{
 			Url:    url,
 			Parser: parser.CityListParser{},
 		},
@@ -57,10 +57,10 @@ func ConCurrent() {
 }
 
 func Simple() {
-	engine.SimpleEngine{
+	SimpleEngine{
 		ItemChan: persist.SimpleItemPrint(),
 	}.Run(
-		engine.Request{
+		Request{
 			Url:    url,
 			Parser: parser.CityListParser{},
 		},

@@ -19,15 +19,15 @@ func (p CityListParser) Parse (contents []byte) engine.ParseResult  {
 	result := engine.ParseResult{}
 	for _, c := range all {
 		url :=string(c[1])
-		cityID:=string(c[2])
-		result.Items = append(result.Items,
-			engine.Item{
-				Url:url,
-				Type :"zhenai:citylist",
-				Id :cityID,
-				Payload :string(c[3]),
-			},
-			) //城市名字
+		//cityID:=string(c[2])
+		//result.Items = append(result.Items,
+		//	engine.Item{
+		//		Url:url,
+		//		Type :"zhenai:citylist",
+		//		Id :cityID,
+		//		Payload :string(c[3]),
+		//	},
+		//	) //城市名字
 		result.Requests = append(result.Requests, engine.Request{
 			Url:     url    ,
 			Parser:  CityParser{},

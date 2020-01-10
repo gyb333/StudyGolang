@@ -37,7 +37,7 @@ func CreatWorkerPool(hosts []int) chan *rpc.Client{
 		if err!=nil{
 			log.Printf("Error connecting to %s %v\n",host,err)
 		}else{
-			log.Printf("Success Connecting to %s\n",host)
+			log.Printf("Success Connecting to %d\n",host)
 			clients=append(clients,client)
 		}
 	}

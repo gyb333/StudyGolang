@@ -6,7 +6,7 @@ import (
 	"golang.org/x/net/html/charset"
 	"log"
 	"golang.org/x/text/encoding/unicode"
-)
+	)
 
 func DetermineEncoding(reader *bufio.Reader) (encoding.Encoding) {
 	bytes, err := reader.Peek(1024)
