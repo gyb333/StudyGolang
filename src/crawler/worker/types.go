@@ -26,7 +26,7 @@ type ParseResult struct {
 
 func SerializeRequest(r engine.Request) Request {
 	name, args := r.Parser.Serialize()
-	return Request{
+		return Request{
 		Url: r.Url,
 		Parser: SerializedParser{
 			Name: name,
