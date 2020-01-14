@@ -1,26 +1,14 @@
-package millionlevel
+package core
 
 import (
-			"encoding/json"
-	"io"
-	"net/http"
+	"encoding/json"
 	"fmt"
+	"io"
+	. "millionlevel/job"
+	"net/http"
 	"time"
 )
 
-//待执行的工作
-type Job struct {
-	Payload Payload
-}
-
-
-
-
-
-
-
-//任务channal
-var JobQueue chan Job
 
 //执行任务的工作者单元
 type Worker struct {
@@ -32,7 +20,7 @@ type Worker struct {
 
 //创建一个新工作者单元
 func NewWorker(workerPool chan chan Job, no int) Worker {
-	fmt.Println("创建一个新工作者单元")
+	fmt.Println("创建一个新工作者单元", no)
 	return Worker{
 		WorkerPool: workerPool,
 		JobChannel: make(chan Job),
@@ -47,17 +35,16 @@ func (w Worker) Start() {
 		for {
 			// register the current worker into the worker queue.
 			w.WorkerPool <- w.JobChannel
-			fmt.Println("w.WorkerPool <- w.JobChannel", w)
+			//fmt.Println("w.WorkerPool <- w.JobChannel", w)
 			select {
 			case job := <-w.JobChannel:
-				if err := job.Payload.UploadToS3(); err != nil {
-					//log.Errorf("Error uploading to S3: %s", err.Error())
-				}
+				//if err := job.Payload.UploadToS3(); err != nil {
+				//	//log.Errorf("Error uploading to S3: %s", err.Error())
+				//}
 
-				fmt.Println("job := <-w.JobChannel")
+				fmt.Printf("Worker NO: %d 正在执行任务:%v\n", w.no, job.Payload.Num)
 				// 收到任务
-				fmt.Println(job)
-				time.Sleep(100 * time.Second)
+				time.Sleep(10 * time.Second)
 			case <-w.quit:
 				// 收到退出信号
 				return
@@ -66,16 +53,12 @@ func (w Worker) Start() {
 	}()
 }
 
-
-
 // 停止信号
 func (w Worker) Stop() {
 	go func() {
 		w.quit <- true
 	}()
 }
-
-
 
 func payloadHandler(w http.ResponseWriter, r *http.Request) {
 

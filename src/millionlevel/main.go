@@ -1,4 +1,4 @@
-package millionlevel
+package main
 
 import (
 				"os"
@@ -6,12 +6,13 @@ import (
 	"time"
 	"fmt"
 	"runtime"
+	. "millionlevel/job"
+	. "millionlevel/core"
+	"millionlevel/queue"
 )
 
 
-type Payload struct {
-	Num int
-}
+
 var (
 	MaxWorker ,_= strconv.ParseInt(os.Getenv("MAX_WORKERS"),10,64)
 	MaxQueue  = os.Getenv("MAX_QUEUE")
@@ -23,24 +24,48 @@ var (
 要解决这一问题，必须控制协程的数量。如何控制协程的数量？Job/Worker模式！
  */
 func main(){
-	JobQueue = make(chan Job, 10)
-	dispatcher := NewDispatcher(int(MaxWorker))
-	dispatcher.Run()
-	time.Sleep(1 * time.Second)
+	JobQueue = make(chan Job, 100)
+
 	go addQueue()
-	time.Sleep(1000 * time.Second)
+	//go SendData()
+	time.Sleep(100 * time.Second)
+
 
 }
 
+func SendData()  {
+	engine :=&queue.Engine{
+		Scheduler:&queue.QueuedScheduler{},
+		WorkerCount:1200000,
+	}
+	engine.Run()
+	for i := 0; i < 30000000; i++ {
+		payLoad := Payload{Num: i}
+		job := Job{Payload: payLoad}
+		// 任务放入任务队列channal
+		engine.Scheduler.Submit(job)
+		fmt.Printf("正在发生任务i:%d,当前协程数:%d\n",i+1, runtime.NumGoroutine())
+		if (i+1)%10000==0{
+			time.Sleep(1*time.Millisecond)
+		}
+	}
+}
+
 func addQueue() {
-	for i := 0; i < 100; i++ {
+	dispatcher := NewDispatcher(1200000)
+	dispatcher.Run()
+
+	for i := 0; i < 30000000; i++ {
 		// 新建一个任务
 		payLoad := Payload{Num: i}
-		work := Job{Payload: payLoad}
+		job := Job{Payload: payLoad}
 		// 任务放入任务队列channal
-		JobQueue <- work
-		fmt.Println("JobQueue <- work", i)
-		fmt.Println("当前协程数:", runtime.NumGoroutine())
-		time.Sleep(100 * time.Millisecond)
+		JobQueue <- job
+		//fmt.Println("JobQueue <- work", i)
+		fmt.Printf("正在发生任务i:%d,当前协程数:%d\n",i+1, runtime.NumGoroutine())
+		if (i+1)%10000==0{
+			time.Sleep(100*time.Microsecond)
+		}
+
 	}
 }

@@ -1,9 +1,9 @@
-package millionlevel
+package core
 
 import (
 	"fmt"
-	"reflect"
-)
+	. "millionlevel/job"
+	)
 
 //调度中心
 type Dispatcher struct {
@@ -34,15 +34,15 @@ func (d *Dispatcher) dispatch() {
 	for {
 		select {
 		case job := <-JobQueue:
-			fmt.Println("job := <-JobQueue:")
+			//fmt.Println("job := <-JobQueue:")
 			//这个调度方法也是在不断的创建协程等待空闲的worker
 			go func(job Job) {
 				//等待空闲worker (任务多的时候会阻塞这里)
-				jobChannel := <-d.WorkerPool
-				fmt.Println("jobChannel := <-d.WorkerPool", reflect.TypeOf(jobChannel))
+				worker := <-d.WorkerPool
+				//fmt.Println("worker := <-d.WorkerPool", reflect.TypeOf(worker))
 				// 将任务放到上述woker的私有任务channal中
-				jobChannel <- job
-				fmt.Println("jobChannel <- job")
+				worker <- job
+				fmt.Println("worker <- job")
 			}(job)
 		}
 	}
