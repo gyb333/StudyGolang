@@ -9,30 +9,21 @@ import (
 	"fmt"
 	)
 
-type Task struct {
-	taskId int
-	f func() error
+type Executer interface {
+	Execute() error
 }
 
-func NewTask(f func() error) *Task{
-	return &Task{
-		f:f,
-	}
-}
 
-func (t *Task) Execute(){
-	t.f()
-}
 
 
 //Job任务
 type Job struct {
-	Tasks []*Task
+	Tasks []Executer
 }
 
 func NewJob(taskId int,cap int) *Job{
 	return &Job{
-		Tasks:make([]*Task,0,cap),
+		Tasks:make([]Executer,0,cap),
 	}
 }
 
@@ -60,7 +51,7 @@ func (w *Worker) Start(){
 			select {
 			case wJob:=<-w.JobChan:
 				for _,task :=range wJob.Tasks{
-					task.Execute()
+					 task.Execute()
 				}
 			case bFinished :=<-w.Finished:
 				if true==bFinished{
@@ -167,6 +158,21 @@ func (wf *WorkFlow) CloseWorkFlow() {
 	}
 }
 
+type Task struct {
+	TaskId int
+	data int
+}
+func NewTask(TaskId,data int) *Task{
+	return &Task{
+		TaskId:TaskId,
+		data:data,
+	}
+}
+func (t *Task) Execute() error {
+	log.Printf("任务%d-%08d", t.TaskId,t.data)
+	return nil
+}
+
 
 func main() {
 	var wf WorkFlow
@@ -174,14 +180,8 @@ func main() {
 	wf.StartWorkFlow(2, 4)
 	for i := 0; i < 100; i++ {
 		wJob := NewJob(i+1,2)
-		wJob.Tasks =append(wJob.Tasks, NewTask(func() error{
-			log.Printf("任务1-%08d", i+1)
-			return nil
-			}))
-		wJob.Tasks =append(wJob.Tasks, NewTask(func() error{
-			log.Printf("任务2-%08d", i+1)
-			return nil
-		}))
+		wJob.Tasks =append(wJob.Tasks, NewTask(1,i+1))
+		wJob.Tasks =append(wJob.Tasks, NewTask( 2,i+1))
 
 		//添加工作
 		wf.AddJob(*wJob)

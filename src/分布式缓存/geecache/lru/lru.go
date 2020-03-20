@@ -1,9 +1,16 @@
 package lru
 
+/*
+lru 缓存淘汰策略
+
+ */
+
 import (
 	"container/list"
 
 )
+
+
 type Value interface {
 	Len() int
 }

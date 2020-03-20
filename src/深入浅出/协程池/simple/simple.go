@@ -1,4 +1,4 @@
-package simple
+package main
 
 /*
 Goroutine作为轻量级执行流程，也不需要CPU调度器的切换
@@ -13,11 +13,13 @@ import (
 	"time"
 )
 
+type TaskFunc  func() (error)
+
 type Task struct {
-	f func() error
+	f TaskFunc
 }
 
-func NewTask(f func() error) *Task{
+func NewTask(f TaskFunc) *Task{
 	return &Task{
 		f:f,
 	}
@@ -29,23 +31,28 @@ func (t *Task) Execute(){
 
 
 type Pool struct {
-	EntryChannel chan *Task
+	//EntryChannel chan *Task
+	EntryChannel chan TaskFunc
 	worker_num int
-	JobsChannel chan *Task
+	//JobsChannel chan *Task
+	JobsChannel chan TaskFunc
 }
 
 func NewPool(cap int) *Pool{
 	return &Pool{
-		EntryChannel:make(chan *Task),
+		//EntryChannel:make(chan *Task),
+		EntryChannel:make(chan TaskFunc),
 		worker_num:cap,
-		JobsChannel: make(chan *Task),
+		//JobsChannel: make(chan *Task),
+		JobsChannel: make(chan TaskFunc),
 	}
 
 }
 
 func (p *Pool) worker(worker_ID int){
 	for task :=range p.JobsChannel{
-		task.Execute()
+		//task.Execute()
+		task()
 		fmt.Println("worker_ID",worker_ID," 执行完毕任务！")
 	}
 }
@@ -65,17 +72,20 @@ func (p *Pool) Run()  {
 
 
 }
+func f() (error){
+	fmt.Println(time.Now())
+	return nil
+}
 
 func main() {
-	t :=NewTask(func() error{
-		fmt.Println(time.Now())
-		return nil
-	})
+
+	//t :=NewTask(f)
 
 	p :=NewPool(3)
 	go func(){
 		for{
-			p.EntryChannel<-t
+			//p.EntryChannel<-t
+			p.EntryChannel <-f
 			//p.JobsChannel<- t
 		}
 	}()
