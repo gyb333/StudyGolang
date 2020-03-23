@@ -2,26 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5378eaf9-fd24-443b-81a8-2dee3e07966b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/web/test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/分布式缓存/geecache/cache/byteview.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/分布式缓存/geecache/cache/cache.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/分布式缓存/geecache/cache/geecache.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/分布式缓存/geecache/cache/geecache_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/分布式缓存/geecache/cache/peers.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/分布式缓存/geecache/consistenthash/consistenthash.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/分布式缓存/geecache/consistenthash/consistenthash_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/分布式缓存/geecache/httpweb/httpPool.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/分布式缓存/geecache/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/分布式缓存/geecache/protobuf/protobuf.pb.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/分布式缓存/geecache/protobuf/protobuf.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/分布式缓存/geecache/run.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/分布式缓存/geecache/singleflight/singleflight.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/分布式缓存/geecache/singleflight/singleflight_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/深入浅出/事件驱动/Events/EventDispatcher.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/深入浅出/事件驱动/eventbus/EventBus.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/深入浅出/事件驱动/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/分布式缓存/lru/lru.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/分布式缓存/geecache/lru/lru.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/分布式缓存/lru/lru_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/分布式缓存/geecache/lru/lru_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/深入浅出/协程池/GoroutinePool.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/深入浅出/协程池/GoroutinePool.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/深入浅出/协程池/simple/simple.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/深入浅出/协程池/simple/simple.go" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,7 +37,7 @@
           <entry key="SerializeData" value="1" />
           <entry key="css" value="1" />
           <entry key="gitignore" value="1" />
-          <entry key="go" value="640" />
+          <entry key="go" value="644" />
           <entry key="h" value="1" />
           <entry key="html" value="6" />
           <entry key="iml" value="3" />
@@ -72,7 +56,7 @@
           <entry key="C++" value="1" />
           <entry key="CSS" value="1" />
           <entry key="DTD" value="4" />
-          <entry key="Go" value="640" />
+          <entry key="Go" value="644" />
           <entry key="HTML" value="6" />
           <entry key="IDEA_MODULE" value="3" />
           <entry key="JavaScript" value="1" />
@@ -84,7 +68,7 @@
         <counts>
           <entry key="Remark" value="14" />
           <entry key="gitignore" value="3" />
-          <entry key="go" value="24135" />
+          <entry key="go" value="25145" />
           <entry key="in" value="2" />
           <entry key="md" value="31" />
           <entry key="mod" value="34" />
@@ -96,7 +80,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="DTD" value="34" />
-          <entry key="Go" value="24132" />
+          <entry key="Go" value="25142" />
           <entry key="Markdown" value="31" />
           <entry key="PLAIN_TEXT" value="84" />
           <entry key="SQL" value="3" />
@@ -169,24 +153,45 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/分布式缓存/geecache/consistenthash/consistenthash_test.go">
+        <entry file="file://$PROJECT_DIR$/src/分布式缓存/geecache/httpweb/httpPool.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="461">
+              <caret line="99" column="23" selection-start-line="99" selection-start-column="23" selection-end-line="99" selection-end-column="23" />
               <folding>
-                <element signature="e#24#56#0" expanded="true" />
+                <element signature="e#46#190#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/分布式缓存/geecache/httpweb/httpPool.go">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/深入浅出/事件驱动/Events/EventDispatcher.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-351">
-              <caret line="137" lean-forward="true" selection-start-line="137" selection-end-line="137" />
+            <state relative-caret-position="-650">
+              <caret line="63" column="13" selection-start-line="63" selection-start-column="4" selection-end-line="63" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/深入浅出/事件驱动/eventbus/EventBus.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
               <folding>
-                <element signature="e#46#190#0" expanded="true" />
+                <element signature="e#18#89#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/深入浅出/事件驱动/main.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="173">
+              <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+              <folding>
+                <element signature="e#14#39#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -205,7 +210,7 @@
         <entry file="file://$PROJECT_DIR$/src/分布式缓存/geecache/protobuf/protobuf.proto">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="232">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -236,18 +241,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="174">
               <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/分布式缓存/geecache/consistenthash/consistenthash.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-              <folding>
-                <element signature="e#24#67#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -300,10 +293,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/projects/chatroom/server/main/processor.go" />
-        <option value="$PROJECT_DIR$/src/projects/chatroom/server/process/processor.go" />
-        <option value="$PROJECT_DIR$/src/projects/chatroom/server/main.go" />
-        <option value="$PROJECT_DIR$/src/projects/chatroom/common/utils.go" />
         <option value="$PROJECT_DIR$/src/projects/chatroom/common/utils/utils.go" />
         <option value="$PROJECT_DIR$/src/projects/chatroom/client/main.go" />
         <option value="$PROJECT_DIR$/src/projects/chatroom/client/process/userprocess.go" />
@@ -351,6 +340,10 @@
         <option value="$PROJECT_DIR$/src/分布式缓存/geecache/cache/peers.go" />
         <option value="$PROJECT_DIR$/src/分布式缓存/geecache/cache/geecache.go" />
         <option value="$PROJECT_DIR$/src/分布式缓存/geecache/httpweb/httpPool.go" />
+        <option value="$PROJECT_DIR$/src/深入浅出/事件驱动/Events/main.go" />
+        <option value="$PROJECT_DIR$/src/深入浅出/事件驱动/Events/EventDispatcher.go" />
+        <option value="$PROJECT_DIR$/src/深入浅出/事件驱动/main.go" />
+        <option value="$PROJECT_DIR$/src/深入浅出/事件驱动/eventbus/EventBus.go" />
       </list>
     </option>
   </component>
@@ -367,8 +360,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="201" />
-    <option name="y" value="91" />
+    <option name="x" value="348" />
+    <option name="y" value="28" />
     <option name="width" value="1490" />
     <option name="height" value="1017" />
   </component>
@@ -403,52 +396,22 @@
               <item name="StudyGolang" type="b2602c69:ProjectViewProjectNode" />
               <item name="StudyGolang" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="分布式缓存" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StudyGolang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StudyGolang" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="分布式缓存" type="462c0819:PsiDirectoryNode" />
-              <item name="geecache" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StudyGolang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StudyGolang" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="分布式缓存" type="462c0819:PsiDirectoryNode" />
-              <item name="geecache" type="462c0819:PsiDirectoryNode" />
-              <item name="cache" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StudyGolang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StudyGolang" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="分布式缓存" type="462c0819:PsiDirectoryNode" />
-              <item name="geecache" type="462c0819:PsiDirectoryNode" />
-              <item name="httpweb" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StudyGolang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StudyGolang" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="分布式缓存" type="462c0819:PsiDirectoryNode" />
-              <item name="geecache" type="462c0819:PsiDirectoryNode" />
-              <item name="protobuf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StudyGolang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StudyGolang" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="分布式缓存" type="462c0819:PsiDirectoryNode" />
-              <item name="geecache" type="462c0819:PsiDirectoryNode" />
-              <item name="singleflight" type="462c0819:PsiDirectoryNode" />
+              <item name="深入浅出" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="StudyGolang" type="b2602c69:ProjectViewProjectNode" />
               <item name="StudyGolang" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="深入浅出" type="462c0819:PsiDirectoryNode" />
+              <item name="事件驱动" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StudyGolang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StudyGolang" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="深入浅出" type="462c0819:PsiDirectoryNode" />
+              <item name="事件驱动" type="462c0819:PsiDirectoryNode" />
+              <item name="Events" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="StudyGolang" type="b2602c69:ProjectViewProjectNode" />
@@ -456,14 +419,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="深入浅出" type="462c0819:PsiDirectoryNode" />
               <item name="协程池" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StudyGolang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StudyGolang" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="深入浅出" type="462c0819:PsiDirectoryNode" />
-              <item name="协程池" type="462c0819:PsiDirectoryNode" />
-              <item name="simple" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="StudyGolang" type="b2602c69:ProjectViewProjectNode" />
@@ -487,7 +442,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1584694869823" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1584953596146" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Module.GOPATH.is.expanded" value="false" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
@@ -503,11 +458,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\StudyGolang\src\深入浅出\事件驱动" />
       <recent name="D:\StudyGolang\src\分布式缓存\geecache\cache" />
       <recent name="D:\StudyGolang\src\分布式缓存\geecache\httpweb" />
       <recent name="D:\StudyGolang\src\分布式缓存\geecache" />
       <recent name="D:\StudyGolang\src\分布式缓存" />
-      <recent name="D:\StudyGolang\src\分布式缓存\geecache\http" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\StudyGolang\src" />
@@ -529,13 +484,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Test.TestDo in 分布式缓存/geecache/singleflight">
-    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Build.go build EventBus.go">
+    <configuration name="go build EventBus.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="StudyGolang" />
       <working_directory value="$PROJECT_DIR$" />
       <go_parameters value="-i" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/src/分布式缓存/geecache/main.go" />
+      <filePath value="$PROJECT_DIR$/src/深入浅出/事件驱动/eventbus/EventBus.go" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="StudyGolang" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/src/深入浅出/事件驱动/main.go" />
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
@@ -575,31 +539,20 @@
       <pattern value="^TestHashing$" />
       <method v="2" />
     </configuration>
-    <configuration name="go test 分布式缓存/geecache/cache" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="StudyGolang" />
-      <working_directory value="$PROJECT_DIR$/src/分布式缓存/geecache/cache" />
-      <go_parameters value="-i" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="分布式缓存/geecache/cache" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Go Build.go build main.go" />
       <item itemvalue="Go Test.TestHashing in 分布式缓存/geecache/consistenthash" />
       <item itemvalue="Go Test.TestGetter in 分布式缓存/geecache/cache" />
-      <item itemvalue="Go Test.go test 分布式缓存/geecache/cache" />
       <item itemvalue="Go Test.TestDo in 分布式缓存/geecache/singleflight" />
+      <item itemvalue="Go Build.go build main.go (1)" />
+      <item itemvalue="Go Build.go build EventBus.go" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build EventBus.go" />
+        <item itemvalue="Go Build.go build main.go (1)" />
         <item itemvalue="Go Test.TestDo in 分布式缓存/geecache/singleflight" />
         <item itemvalue="Go Test.TestHashing in 分布式缓存/geecache/consistenthash" />
         <item itemvalue="Go Test.TestGetter in 分布式缓存/geecache/cache" />
-        <item itemvalue="Go Test.go test 分布式缓存/geecache/cache" />
-        <item itemvalue="Go Build.go build main.go" />
       </list>
     </recent_temporary>
   </component>
@@ -635,7 +588,7 @@
       <workItem from="1581054653630" duration="8852000" />
       <workItem from="1583047923046" duration="2474000" />
       <workItem from="1584406739893" duration="27918000" />
-      <workItem from="1584672023471" duration="12975000" />
+      <workItem from="1584672023471" duration="21221000" />
     </task>
     <servers />
   </component>
@@ -672,7 +625,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="408024000" />
+    <option name="totallyTimeSpent" value="416270000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -684,10 +637,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="201" y="91" width="1490" height="1017" extended-state="1" />
+    <frame x="348" y="28" width="1490" height="1017" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49909583" visible="true" weight="0.2013986" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49909583" visible="true" weight="0.13216783" />
       <window_info id="Structure" order="1" sideWeight="0.50180507" side_tool="true" weight="0.15231362" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -696,13 +649,13 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.20889488" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4993573" weight="0.3216308" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4993573" visible="true" weight="0.33522084" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.2587601" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Database Changes" order="6" show_stripe_button="false" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32928476" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.17214043" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.164859" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50064266" side_tool="true" weight="0.45209175" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -853,34 +806,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/Go/src/io/ioutil/ioutil.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-267">
-          <caret line="135" column="29" selection-start-line="135" selection-start-column="25" selection-end-line="135" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Go/src/io/multi.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1647">
-          <caret line="101" column="16" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Go/src/bufio/bufio.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="563" column="16" lean-forward="true" selection-start-line="563" selection-start-column="13" selection-end-line="563" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Go/src/fmt/print.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2552">
-          <caret line="24" column="35" lean-forward="true" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Go/src/sync/pool.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-384">
@@ -1178,7 +1103,7 @@
     <entry file="file://$PROJECT_DIR$/src/分布式缓存/geecache/protobuf/protobuf.proto">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
@@ -1198,10 +1123,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/分布式缓存/geecache/httpweb/httpPool.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-351">
-          <caret line="137" lean-forward="true" selection-start-line="137" selection-end-line="137" />
+        <state relative-caret-position="461">
+          <caret line="99" column="23" selection-start-line="99" selection-start-column="23" selection-end-line="99" selection-end-column="23" />
           <folding>
             <element signature="e#46#190#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/深入浅出/事件驱动/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+          <folding>
+            <element signature="e#14#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/深入浅出/事件驱动/Events/EventDispatcher.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-650">
+          <caret line="63" column="13" selection-start-line="63" selection-start-column="4" selection-end-line="63" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Go/src/golang.org/x/tools/go/ssa/interp/testdata/src/fmt/fmt.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/深入浅出/事件驱动/eventbus/EventBus.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+          <folding>
+            <element signature="e#18#89#0" expanded="true" />
           </folding>
         </state>
       </provider>
