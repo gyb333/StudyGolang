@@ -2,10 +2,17 @@ package main
 
 import (
 	"sync"
-	"fmt"
-	"time"
 	"math/rand"
+	"time"
+	"fmt"
 )
+
+/*
+使用 channel 取代回调的理由：
+	传统的回调方式要求实现某种接口,
+   而channel允许在没有接口的情况下在一个简单的函数中注册订阅者
+ */
+
 
 type DataEvent struct {
 	Data interface{}
@@ -72,6 +79,7 @@ func main()  {
 
 	go publisTo("topic1","Hi topic 1")
 	go publisTo("topic2","welcome topic 2")
+	go publisTo("topic3","welcome topic 3")
 
 	for{
 		select{
