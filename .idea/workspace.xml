@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5378eaf9-fd24-443b-81a8-2dee3e07966b" name="Default Changelist" comment="" />
+    <list default="true" id="5378eaf9-fd24-443b-81a8-2dee3e07966b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/MQ/3fanout/comsume/receive_logs.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MQ/3fanout/publish/emit_log.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MQ/4direct/comsume/receive_logs.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MQ/4direct/publish/emit_log.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MQ/5Topic/comsume/receive_logs.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MQ/5Topic/publish/emit_log.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MQ/6rpc/client/rpc_client.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MQ/6rpc/server/rpc_server.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MQ/2day/worker/worker.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/MQ/2day/worker/worker.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MQ/common/common.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/MQ/common/common.go" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,9 +26,9 @@
     <session id="2120231562">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.1" value="3" />
-          <entry key="project.open.time.13" value="2" />
+          <entry key="project.open.time.13" value="3" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.4" value="1" />
@@ -23,7 +36,7 @@
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -34,13 +47,14 @@
           <entry key="SerializeData" value="1" />
           <entry key="css" value="1" />
           <entry key="gitignore" value="1" />
-          <entry key="go" value="677" />
+          <entry key="go" value="702" />
           <entry key="h" value="1" />
           <entry key="html" value="6" />
           <entry key="iml" value="3" />
           <entry key="in" value="1" />
           <entry key="js" value="1" />
-          <entry key="md" value="11" />
+          <entry key="log" value="6" />
+          <entry key="md" value="12" />
           <entry key="mod" value="4" />
           <entry key="proto" value="1" />
           <entry key="sh" value="1" />
@@ -53,19 +67,19 @@
           <entry key="C++" value="1" />
           <entry key="CSS" value="1" />
           <entry key="DTD" value="4" />
-          <entry key="Go" value="677" />
+          <entry key="Go" value="702" />
           <entry key="HTML" value="6" />
           <entry key="IDEA_MODULE" value="3" />
           <entry key="JavaScript" value="1" />
-          <entry key="Markdown" value="11" />
-          <entry key="PLAIN_TEXT" value="16" />
+          <entry key="Markdown" value="12" />
+          <entry key="PLAIN_TEXT" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Remark" value="14" />
           <entry key="gitignore" value="3" />
-          <entry key="go" value="25903" />
+          <entry key="go" value="26305" />
           <entry key="in" value="2" />
           <entry key="md" value="31" />
           <entry key="mod" value="34" />
@@ -77,7 +91,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="DTD" value="34" />
-          <entry key="Go" value="25900" />
+          <entry key="Go" value="26302" />
           <entry key="Markdown" value="31" />
           <entry key="PLAIN_TEXT" value="84" />
           <entry key="SQL" value="3" />
@@ -149,37 +163,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MQ/2day/tasker/tasker.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-86">
-              <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-              <folding>
-                <element signature="e#14#72#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/MQ/common/common.go">
+        <entry file="file://$PROJECT_DIR$/src/MQ/6rpc/server/rpc_server.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+            <state relative-caret-position="396">
+              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
               <folding>
-                <element signature="e#16#86#0" expanded="true" />
+                <element signature="e#14#77#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MQ/2day/worker/worker.go">
+        <entry file="file://$PROJECT_DIR$/src/MQ/6rpc/client/rpc_client.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+            <state relative-caret-position="-1823">
+              <caret line="24" column="67" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
               <folding>
-                <element signature="e#14#83#0" expanded="true" />
+                <element signature="e#14#131#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -193,8 +195,8 @@
         <option value="JavaScript File" />
         <option value="CSS File" />
         <option value="HTML File" />
-        <option value="Go Application" />
         <option value="Go File" />
+        <option value="Go Application" />
       </list>
     </option>
   </component>
@@ -213,6 +215,7 @@
       <find>delete</find>
       <find>fmt</find>
       <find>es</find>
+      <find>Publish</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -233,16 +236,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/projects/chatroom/server/utils/redis.go" />
-        <option value="$PROJECT_DIR$/src/projects/chatroom/server/processor/userProcess.go" />
-        <option value="$PROJECT_DIR$/src/projects/chatroom/common/message/message.go" />
-        <option value="$PROJECT_DIR$/src/projects/chatroom/server/process/process.go" />
-        <option value="$PROJECT_DIR$/src/projects/chatroom/client/process/userProcess.go" />
-        <option value="$PROJECT_DIR$/src/深入浅出/协程池/main.go" />
-        <option value="$PROJECT_DIR$/src/深入浅出/工作池/WorkerPool.go" />
-        <option value="$PROJECT_DIR$/src/深入浅出/对象池/main.go" />
-        <option value="$PROJECT_DIR$/src/深入浅出/对象池/ObjectPool.go" />
-        <option value="$PROJECT_DIR$/src/分布式缓存/lru/lru_test.go" />
         <option value="$PROJECT_DIR$/src/深入浅出/协程池/GoroutinePool.go" />
         <option value="$PROJECT_DIR$/src/web/test.go" />
         <option value="$PROJECT_DIR$/src/深入浅出/协程池/simple/simple.go" />
@@ -281,9 +274,19 @@
         <option value="$PROJECT_DIR$/src/MQ/common.go" />
         <option value="$PROJECT_DIR$/src/MQ/1day/send/send.go" />
         <option value="$PROJECT_DIR$/src/MQ/1day/receive/receive.go" />
-        <option value="$PROJECT_DIR$/src/MQ/2day/worker/worker.go" />
-        <option value="$PROJECT_DIR$/src/MQ/common/common.go" />
         <option value="$PROJECT_DIR$/src/MQ/2day/tasker/tasker.go" />
+        <option value="$PROJECT_DIR$/src/MQ/3day/publish.go" />
+        <option value="$PROJECT_DIR$/src/MQ/3day/publish/emit_log.go" />
+        <option value="$PROJECT_DIR$/src/MQ/3day/comsume/receive_logs.go" />
+        <option value="$PROJECT_DIR$/src/MQ/common/common.go" />
+        <option value="$PROJECT_DIR$/src/MQ/4direct/publish/emit_log.go" />
+        <option value="$PROJECT_DIR$/src/MQ/3fanout/comsume/receive_logs.go" />
+        <option value="$PROJECT_DIR$/src/MQ/2day/worker/worker.go" />
+        <option value="$PROJECT_DIR$/src/MQ/4direct/comsume/receive_logs.go" />
+        <option value="$PROJECT_DIR$/src/MQ/5Topic/publish/emit_log.go" />
+        <option value="$PROJECT_DIR$/src/MQ/5Topic/comsume/receive_logs.go" />
+        <option value="$PROJECT_DIR$/src/MQ/6rpc/client/rpc_client.go" />
+        <option value="$PROJECT_DIR$/src/MQ/6rpc/server/rpc_server.go" />
       </list>
     </option>
   </component>
@@ -299,9 +302,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="103" />
-    <option name="y" value="33" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1490" />
     <option name="height" value="1017" />
   </component>
@@ -313,6 +316,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="CatdeaLogs" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -324,6 +331,19 @@
               <item name="StudyGolang" type="b2602c69:ProjectViewProjectNode" />
               <item name="StudyGolang" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StudyGolang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StudyGolang" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="MQ" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StudyGolang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StudyGolang" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="MQ" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="StudyGolang" type="b2602c69:ProjectViewProjectNode" />
@@ -339,27 +359,18 @@
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
               <item name="GOPATH &lt;StudyGolang&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
             </path>
-            <path>
-              <item name="StudyGolang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="GOPATH &lt;StudyGolang&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="DefaultGoTemplateProperty" value="Go Application" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585820059278" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585907619793" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Module.GOPATH.is.expanded" value="false" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
@@ -382,11 +393,11 @@
       <recent name="D:\StudyGolang\src\test" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\StudyGolang\src\MQ\3fanout\comsume" />
+      <recent name="D:\StudyGolang\src\MQ\3fanout" />
       <recent name="D:\StudyGolang\src\MQ\common" />
       <recent name="D:\StudyGolang\src\MQ\rabbitmq" />
       <recent name="D:\StudyGolang\src\MQ\1day\send" />
-      <recent name="D:\StudyGolang\src\MQ\1day\receive" />
-      <recent name="D:\StudyGolang\src\深入浅出\事件驱动" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -401,13 +412,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build send.go">
-    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Build.go build rpc_server.go">
+    <configuration name="go build emit_log.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="StudyGolang" />
       <working_directory value="$PROJECT_DIR$" />
       <go_parameters value="-i" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/src/MQ/main.go" />
+      <filePath value="$PROJECT_DIR$/src/MQ/3day/publish/emit_log.go" />
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
@@ -429,6 +440,15 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <configuration name="go build rpc_server.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="StudyGolang" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/src/MQ/6rpc/server/rpc_server.go" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build send.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="StudyGolang" />
       <working_directory value="$PROJECT_DIR$" />
@@ -438,31 +458,20 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="go test 深入浅出/高性能字符串拼接" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="StudyGolang" />
-      <working_directory value="$PROJECT_DIR$/src/深入浅出/高性能字符串拼接" />
-      <go_parameters value="-i" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="深入浅出/高性能字符串拼接" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Go Test.go test 深入浅出/高性能字符串拼接" />
-      <item itemvalue="Go Build.go build main.go" />
       <item itemvalue="Go Build.go build receive.go" />
       <item itemvalue="Go Build.go build receive.go (1)" />
       <item itemvalue="Go Build.go build send.go" />
+      <item itemvalue="Go Build.go build emit_log.go" />
+      <item itemvalue="Go Build.go build rpc_server.go" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build rpc_server.go" />
+        <item itemvalue="Go Build.go build emit_log.go" />
         <item itemvalue="Go Build.go build send.go" />
         <item itemvalue="Go Build.go build receive.go (1)" />
         <item itemvalue="Go Build.go build receive.go" />
-        <item itemvalue="Go Build.go build main.go" />
-        <item itemvalue="Go Test.go test 深入浅出/高性能字符串拼接" />
       </list>
     </recent_temporary>
   </component>
@@ -500,7 +509,8 @@
       <workItem from="1584406739893" duration="27918000" />
       <workItem from="1584672023471" duration="27304000" />
       <workItem from="1585805789335" duration="620000" />
-      <workItem from="1585806468867" duration="10209000" />
+      <workItem from="1585806468867" duration="17004000" />
+      <workItem from="1585892489495" duration="5272000" />
     </task>
     <servers />
   </component>
@@ -537,7 +547,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="433182000" />
+    <option name="totallyTimeSpent" value="445249000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -549,10 +559,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="103" y="33" width="1490" height="1017" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49909583" visible="true" weight="0.27552447" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49909583" visible="true" weight="0.21215352" />
       <window_info id="Structure" order="1" sideWeight="0.50180507" side_tool="true" weight="0.15231362" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -561,15 +571,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.20889488" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4993573" weight="0.3275488" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4993573" weight="0.18980478" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.2587601" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Database Changes" order="6" show_stripe_button="false" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32928476" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32616082" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.2462039" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50064266" side_tool="true" weight="0.45209175" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -617,6 +627,11 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/src/github.com/streadway/amqp" />
+    </ignored-roots>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -718,81 +733,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/crawler/parser/citylist.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-87" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawler/parser/city.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1136">
-          <caret line="50" column="29" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawler/worker/workclient.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-783" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawler/worker/fetchworker.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawler/engine/types.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/rpcutil.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rpc/rpcdemo/server/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="26" column="20" lean-forward="true" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/orm/main.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://C:/Go/src/net/http/server.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="2193" column="29" lean-forward="true" selection-start-line="2192" selection-start-column="4" selection-end-line="2193" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/web/test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawler/engine/concurrent.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/crawler/engine/main.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/深入浅出/协程池/simple/simple.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="783">
-          <caret line="54" column="14" lean-forward="true" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/深入浅出/协程池/GoroutinePool.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
@@ -979,92 +919,149 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/MQ/rabbitmq/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/github.com/streadway/amqp/connection.go" />
+    <entry file="file://$PROJECT_DIR$/src/github.com/streadway/amqp/channel.go" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="319">
+            <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MQ/2day/tasker/tasker.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MQ/3day/publish.go" />
+    <entry file="file://D:/Go/src/github.com/streadway/amqp/channel.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="1325" column="19" selection-start-line="1325" selection-start-column="19" selection-end-line="1325" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MQ/1day/send/send.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="33" column="22" lean-forward="true" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MQ/3day/comsume/logs_from_rabbit.log" />
+    <entry file="file://$PROJECT_DIR$/src/MQ/1day/receive/receive.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-58">
+          <caret line="35" column="12" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MQ/3fanout/publish/emit_log.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MQ/common/common.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MQ/4direct/comsume/logs_from_rabbit.log" />
+    <entry file="file://$PROJECT_DIR$/src/MQ/3fanout/comsume/receive_logs.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MQ/2day/worker/worker.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MQ/4direct/publish/emit_log.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="46" column="2" lean-forward="true" selection-start-line="46" selection-start-column="2" selection-end-line="46" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MQ/4direct/comsume/receive_logs.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="9" column="58" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MQ/5Topic/comsume/receive_logs.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MQ/5Topic/publish/emit_log.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+          <folding>
+            <element signature="e#14#81#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Go/src/github.com/streadway/amqp/delivery.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MQ/6rpc/client/rpc_client.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1823">
+          <caret line="24" column="67" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
+          <folding>
+            <element signature="e#14#131#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/MQ/rabbitmq/RabbitMQ.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
+        <state relative-caret-position="-909">
           <caret line="47" selection-start-line="46" selection-start-column="4" selection-end-line="47" />
           <folding>
-            <element signature="e#18#44#0" expanded="true" />
             <element signature="n#!!block;n#mqClose#0" />
             <element signature="n#!!block;n#Start#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MQ/rabbitmq/main.go">
+    <entry file="file://$PROJECT_DIR$/src/MQ/6rpc/server/rpc_server.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        <state relative-caret-position="396">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
           <folding>
-            <element signature="e#14#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MQ/1day/send/send.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="39" column="46" selection-start-line="39" selection-start-column="46" selection-end-line="39" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MQ/1day/receive/receive.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="35" column="12" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/github.com/streadway/amqp/connection.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2670">
-          <caret line="651" column="21" selection-start-line="651" selection-start-column="21" selection-end-line="651" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MQ/2day/tasker/tasker.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-86">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-          <folding>
-            <element signature="e#14#72#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/github.com/streadway/amqp/channel.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="810" column="19" lean-forward="true" selection-start-line="810" selection-start-column="19" selection-end-line="810" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="319">
-            <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MQ/2day/worker/worker.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-          <folding>
-            <element signature="e#14#83#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MQ/common/common.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-          <folding>
-            <element signature="e#16#86#0" expanded="true" />
+            <element signature="e#14#77#0" expanded="true" />
           </folding>
         </state>
       </provider>

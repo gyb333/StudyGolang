@@ -8,7 +8,7 @@ import (
 )
 
 //go run worker.go
-
+//工作队列，它假设队列中的每一个任务都只会被分发到一个工作者进行处理。
 func main() {
 	conn:=GetRabbitConn()
 	defer conn.Close()
