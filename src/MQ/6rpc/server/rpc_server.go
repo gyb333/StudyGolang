@@ -32,11 +32,8 @@ RPC server对Client请求的响应同样需要通过消息队列来传递，可�
 */
 
 func main(){
-	conn :=GetRabbitConn()
+	conn,ch :=GetRabbitConnChan("root","root","Hadoop",5672)
 	defer conn.Close()
-
-	ch, err := conn.Channel()
-	FailOnError(err, "Failed to open a channel")
 	defer ch.Close()
 
 	q, err := ch.QueueDeclare(
@@ -86,6 +83,7 @@ func main(){
 					ContentType :    "text/plain",
 					CorrelationId:    d.CorrelationId,
 					Body:            []byte(strconv.Itoa(response)),
+
 				})
 			FailOnError(err, "Failed to publish a message")
 

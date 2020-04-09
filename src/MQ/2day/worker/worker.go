@@ -10,40 +10,20 @@ import (
 //go run worker.go
 //工作队列，它假设队列中的每一个任务都只会被分发到一个工作者进行处理。
 func main() {
-	conn:=GetRabbitConn()
+	conn,ch :=GetRabbitConnChan("root","root","Hadoop",5672)
 	defer conn.Close()
-
-	ch, err := conn.Channel()
-	FailOnError(err, "Failed to open a channel")
 	defer ch.Close()
 
-	q, err := ch.QueueDeclare(
-		"task_queue", // name
-		true,         // durable
-		false,        // delete when unused
-		false,        // exclusive
-		false,        // no-wait
-		nil,          // arguments
-	)
+	q, err := ch.QueueDeclare("task_queue",
+		true,false, false, false,nil, )
 	FailOnError(err, "Failed to declare a queue")
 
 	//轮询调度、消息持久化和公平分发的特性
-	err = ch.Qos(
-		1,     // prefetch count
-		0,     // prefetch size
-		false, // global
-	)
+	err = ch.Qos(1, 0, false, )// 确保rabbitmq会一个一个发消息
 	FailOnError(err, "Failed to set QoS")
 
-	msgs, err := ch.Consume(
-		q.Name, // queue
-		"",     // consumer
-		false,  // auto-ack
-		false,  // exclusive
-		false,  // no-local
-		false,  // no-wait
-		nil,    // args
-	)
+	msgs, err := ch.Consume(q.Name,
+		"",false,false,false,false,nil,)
 	FailOnError(err, "Failed to register a consumer")
 
 	forever := make(chan bool)
@@ -55,7 +35,12 @@ func main() {
 			t := time.Duration(dot_count)
 			time.Sleep(t * 10*time.Second)
 			log.Printf("Done")
+			//手动确认成功
 			d.Ack(false)
+			//手动确认失败 ,requeue 是否重回队列
+			//d.Nack(false,false) //批量执行 变成死信队列 TTL过期也可以变成死信队列
+			//d.Reject(false)	//单条执行 	false变成死信队列
+
 		}
 	}()
 

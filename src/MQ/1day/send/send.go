@@ -2,21 +2,15 @@ package main
 
 import (
 	"github.com/streadway/amqp"
-	"fmt"
-	. "MQ/common"
+		. "MQ/common"
 		"strconv"
 )
 
 
 
 func main() {
-	RabbitUrl := fmt.Sprintf("amqp://%s:%s@%s:%d/", "root", "root", "Hadoop", 5672)
-	conn, err := amqp.Dial(RabbitUrl)
-	FailOnError(err, "Failed to connect to server")
+	conn,ch :=GetRabbitConnChan("root","root","Hadoop",5672)
 	defer conn.Close()
-
-	ch,err:=conn.Channel()
-	FailOnError(err, "Failed to connect to channel")
 	defer ch.Close()
 
 	q, err := ch.QueueDeclare(

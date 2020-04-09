@@ -16,25 +16,12 @@ func main(){
 	FailOnError(err, "Failed to open a channel")
 	defer ch.Close()
 
-	err = ch.ExchangeDeclare(
-		"logs_direct",
-		"direct",
-		true,
-		false,
-		false,
-		false,
-		nil,
-	)
+	err = ch.ExchangeDeclare("logs_direct","direct",
+		true,false,false,false,nil,)
 	FailOnError(err, "Failed to declare an exchange")
 
-	q, err := ch.QueueDeclare(
-		"",     //name
-		false,
-		false,
-		true,
-		false,
-		nil,
-	)
+	q, err := ch.QueueDeclare("",
+		false,false,true,false,nil, )
 	FailOnError(err, "Failed to declare a queue")
 
 	if len(os.Args) < 2 {
@@ -45,25 +32,12 @@ func main(){
 	for _, s := range os.Args[1:] {
 		log.Printf("Binding queue %s to exchange %s with routing key %s",
 			q.Name, "logs_direct", s)
-		err = ch.QueueBind(
-			q.Name, //queue name
-			s,                //routing key
-			"logs_direct",    //exchange
-			false,
-			nil,
-		)
+		err = ch.QueueBind(q.Name,s, "logs_direct",false,nil,)
 		FailOnError(err, "Failed to bind a queue")
 	}
 
-	msgs, err := ch.Consume(
-		q.Name,     //name
-		"",                //consumer
-		true,
-		false,
-		false,
-		false,
-		nil,
-	)
+	msgs, err := ch.Consume(q.Name,    "",
+		true,false,false,false,nil,)
 	FailOnError(err, "Failed to register a consumer")
 
 	forever := make(chan bool)

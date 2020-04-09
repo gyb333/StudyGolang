@@ -12,30 +12,17 @@ import (
 //go run tasker.go  Third message...
 
 func main() {
-	conn:=GetRabbitConn()
+	conn,ch :=GetRabbitConnChan("root","root","Hadoop",5672)
 	defer conn.Close()
-
-	ch, err := conn.Channel()
-	FailOnError(err, "Failed to open a channel")
 	defer ch.Close()
 
 
-	q, err := ch.QueueDeclare(
-		"task_queue", // name
-		true,         // durable
-		false,        // delete when unused
-		false,        // exclusive
-		false,        // no-wait
-		nil,          // arguments
-	)
+	q, err := ch.QueueDeclare("task_queue",
+		true,  false,  false, false, nil,)
 	FailOnError(err, "Failed to declare a queue")
 
 	body := BodyFrom(os.Args)
-	err = ch.Publish(
-		"",           // exchange
-		q.Name,       // routing key
-		false,        // mandatory
-		false,
+	err = ch.Publish("",q.Name,false, false,
 		amqp.Publishing{
 			DeliveryMode: amqp.Persistent,
 			ContentType:  "text/plain",

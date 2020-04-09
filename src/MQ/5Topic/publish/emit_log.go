@@ -14,14 +14,11 @@ go run emit_log.go "test.critical" "A critical *.kernal error"
 */
 
 func main() {
-	conn := GetRabbitConn()
+	conn,ch :=GetRabbitConnChan("root","root","Hadoop",5672)
 	defer conn.Close()
-
-	ch, err := conn.Channel()
-	FailOnError(err, "Failed to open a channel")
 	defer ch.Close()
 
-	err = ch.ExchangeDeclare(
+	err := ch.ExchangeDeclare(
 		"logs_topic", // name
 		"topic",      // type
 		true,         // durable

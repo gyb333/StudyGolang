@@ -27,14 +27,11 @@ Topic exchange很灵活，也很容易用此实现其他类型的功能.
 
 
 func main() {
-	conn  :=  GetRabbitConn()
+	conn,ch :=GetRabbitConnChan("root","root","Hadoop",5672)
 	defer conn.Close()
-
-	ch, err := conn.Channel()
-	FailOnError(err, "Failed to open a channel")
 	defer ch.Close()
 
-	err = ch.ExchangeDeclare(
+	err := ch.ExchangeDeclare(
 		"logs_topic", // name
 		"topic",      // type
 		true,         // durable

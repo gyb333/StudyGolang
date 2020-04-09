@@ -1,23 +1,17 @@
 package main
 
 import (
-	"github.com/streadway/amqp"
-	"log"
-	"fmt"
-	. "MQ/common"
+		"log"
+		. "MQ/common"
 )
 
 
 
 func main() {
-	RabbitUrl := fmt.Sprintf("amqp://%s:%s@%s:%d/", "root", "root", "192.168.56.100", 5672)
-	conn, err := amqp.Dial(RabbitUrl)
-	FailOnError(err, "Failed to connect to server")
-	defer conn.Close();
-
-	ch, err := conn.Channel()
-	FailOnError(err, "Failed to connect to channel")
+	conn,ch :=GetRabbitConnChan("root","root","192.168.56.100",5672)
+	defer conn.Close()
 	defer ch.Close()
+
 
 	q, err := ch.QueueDeclare(
 		"helloQueue",    //name

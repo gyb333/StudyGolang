@@ -1,34 +1,33 @@
-package comsume
-
+package main
 import (
-	"log"
 	. "MQ/common"
+	"log"
 )
 
 
-//将同一个消息发送给多个消费者进行处理
 func main() {
 	conn,ch :=GetRabbitConnChan("root","root","Hadoop",5672)
 	defer conn.Close()
 	defer ch.Close()
 
-	err := ch.ExchangeDeclare("logs","fanout",
-		true, false, false,false, nil, )
+	exchangeName := "return_exchange";
+	exchangeType := "topic";
+	err := ch.ExchangeDeclare(exchangeName,exchangeType,
+		true, false,false,false,nil)
 	FailOnError(err, "Failed to declare an exchange")
 
-	//创建临时队列
-	q, err := ch.QueueDeclare("",false, false, true, false,nil,)
+	queueName := "return_queue";
+	q, err := ch.QueueDeclare(queueName,
+		true,false,true,false, nil)
 	FailOnError(err, "Failed to declare a queue")
 
-	//绑定临时队列
-	err = ch.QueueBind(q.Name, "","logs", false,nil)
+	routingKey := "return.*";
+	err = ch.QueueBind(q.Name,routingKey,exchangeName,false,nil)
 	FailOnError(err, "Failed to bind a queue")
 
-	msgs, err := ch.Consume(q.Name,"",
-		true,   // auto-ack 为true 表示不需要手动发送确认
-		false,false,false, nil, )
+	msgs, err := ch.Consume(q.Name,
+		"",true,false,false, false,nil,)
 	FailOnError(err, "Failed to register a consumer")
-
 	forever := make(chan bool)
 
 	go func() {
@@ -40,6 +39,3 @@ func main() {
 	log.Printf(" [*] Waiting for logs. To exit press CTRL+C")
 	<-forever
 }
-
-//go run receive_logs.go
-//go run receive_logs.go

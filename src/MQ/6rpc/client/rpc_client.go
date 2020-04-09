@@ -51,11 +51,8 @@ func bodyFrom(args []string) int {
 }
 
 func fibonacciRPC(n int) (res int, err error) {
-	conn  := GetRabbitConn()
+	conn,ch :=GetRabbitConnChan("root","root","Hadoop",5672)
 	defer conn.Close()
-
-	ch, err := conn.Channel()
-	FailOnError(err, "Failed to open a channel")
 	defer ch.Close()
 
 	q, err := ch.QueueDeclare(

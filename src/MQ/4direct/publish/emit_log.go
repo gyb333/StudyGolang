@@ -10,31 +10,16 @@ import (
 )
 
 func main(){
-	conn  :=  GetRabbitConn()
-
+	conn,ch :=GetRabbitConnChan("root","root","Hadoop",5672)
 	defer conn.Close()
-
-	ch, err := conn.Channel()
-	FailOnError(err, "Failed to open an channel")
 	defer ch.Close()
 
-	err = ch.ExchangeDeclare(
-		"logs_direct",     //name
-		"direct",         //type
-		true,
-		false,
-		false,
-		false,
-		nil,
-	)
+	err := ch.ExchangeDeclare("logs_direct","direct",
+		true,false,false,false,nil,)
 	FailOnError(err, "Failed to declare an exchange")
 
 	body := BodyFrom(os.Args)
-	err = ch.Publish(
-		"logs_direct",            // exchange
-		SeverityFrom(os.Args),    //routing key
-		false,
-		false,
+	err = ch.Publish("logs_direct", SeverityFrom(os.Args), false,false,
 		amqp.Publishing{
 			ContentType: "text/plain",
 			Body:        []byte(body),
