@@ -2,27 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5378eaf9-fd24-443b-81a8-2dee3e07966b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/MQ/7comfirm/comsume/Consumer.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MQ/7comfirm/publish/Producer.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MQ/8Return/comsume/Consumer.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MQ/8Return/produce/Producer.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MQ/9TTL_DLX/comsume/Consumer.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MQ/9TTL_DLX/produce/Producer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redis/redis文档" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/MQ/common.a" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/windows_amd64/MQ/common.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MQ/1day/receive/receive.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/MQ/1day/receive/receive.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MQ/1day/send/send.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/MQ/1day/send/send.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MQ/2day/tasker/tasker.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/MQ/2day/tasker/tasker.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MQ/2day/worker/worker.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/MQ/2day/worker/worker.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MQ/3fanout/comsume/receive_logs.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/MQ/3fanout/comsume/receive_logs.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MQ/3fanout/publish/emit_log.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/MQ/3fanout/publish/emit_log.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MQ/4direct/comsume/receive_logs.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/MQ/4direct/comsume/receive_logs.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MQ/4direct/publish/emit_log.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/MQ/4direct/publish/emit_log.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MQ/5Topic/comsume/receive_logs.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/MQ/5Topic/comsume/receive_logs.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MQ/5Topic/publish/emit_log.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/MQ/5Topic/publish/emit_log.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MQ/6rpc/client/rpc_client.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/MQ/6rpc/client/rpc_client.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MQ/6rpc/server/rpc_server.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/MQ/6rpc/server/rpc_server.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MQ/common/common.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/MQ/common/common.go" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,6 +48,7 @@
           <entry key="md" value="12" />
           <entry key="mod" value="4" />
           <entry key="proto" value="1" />
+          <entry key="redis文档" value="1" />
           <entry key="sh" value="1" />
           <entry key="toml" value="7" />
           <entry key="安装文档" value="1" />
@@ -82,7 +64,7 @@
           <entry key="IDEA_MODULE" value="3" />
           <entry key="JavaScript" value="1" />
           <entry key="Markdown" value="12" />
-          <entry key="PLAIN_TEXT" value="22" />
+          <entry key="PLAIN_TEXT" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -94,6 +76,7 @@
           <entry key="md" value="31" />
           <entry key="mod" value="34" />
           <entry key="proto" value="19" />
+          <entry key="redis文档" value="181" />
           <entry key="txt" value="43" />
           <entry key="安装文档" value="3" />
         </counts>
@@ -103,7 +86,7 @@
           <entry key="DTD" value="34" />
           <entry key="Go" value="27198" />
           <entry key="Markdown" value="31" />
-          <entry key="PLAIN_TEXT" value="84" />
+          <entry key="PLAIN_TEXT" value="265" />
           <entry key="SQL" value="3" />
         </counts>
       </usages-collector>
@@ -182,7 +165,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MQ/9TTL_DLX/produce/Producer.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="290">
@@ -190,6 +173,15 @@
               <folding>
                 <element signature="e#13#69#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Redis/redis文档">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="348">
+              <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -243,7 +235,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/分布式缓存/httpPool.go" />
         <option value="$PROJECT_DIR$/src/分布式缓存/geecache/httpPool.go" />
         <option value="$PROJECT_DIR$/src/分布式缓存/main.go" />
         <option value="$PROJECT_DIR$/src/分布式缓存/go.mod" />
@@ -294,6 +285,7 @@
         <option value="$PROJECT_DIR$/src/MQ/2day/worker/worker.go" />
         <option value="$PROJECT_DIR$/src/MQ/9TTL_DLX/comsume/Consumer.go" />
         <option value="$PROJECT_DIR$/src/MQ/9TTL_DLX/produce/Producer.go" />
+        <option value="$PROJECT_DIR$/src/Redis/redis文档" />
       </list>
     </option>
   </component>
@@ -309,9 +301,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-18" />
-    <option name="y" value="47" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="275" />
+    <option name="y" value="236" />
     <option name="width" value="1679" />
     <option name="height" value="1017" />
   </component>
@@ -342,7 +334,7 @@
               <item name="StudyGolang" type="b2602c69:ProjectViewProjectNode" />
               <item name="StudyGolang" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="orm" type="462c0819:PsiDirectoryNode" />
+              <item name="Redis" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="StudyGolang" type="b2602c69:ProjectViewProjectNode" />
@@ -365,7 +357,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586412694708" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586425513983" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Module.GOPATH.is.expanded" value="false" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
@@ -506,7 +498,7 @@
       <workItem from="1585805789335" duration="620000" />
       <workItem from="1585806468867" duration="17004000" />
       <workItem from="1585892489495" duration="6082000" />
-      <workItem from="1586225890337" duration="32115000" />
+      <workItem from="1586225890337" duration="33997000" />
     </task>
     <servers />
   </component>
@@ -543,7 +535,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="478174000" />
+    <option name="totallyTimeSpent" value="480056000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -555,10 +547,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="275" y="236" width="1679" height="1017" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49909583" visible="true" weight="0.11886994" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49909583" visible="true" weight="0.13773935" />
       <window_info id="Structure" order="1" sideWeight="0.50180507" side_tool="true" weight="0.15231362" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -567,7 +559,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.20889488" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4993573" visible="true" weight="0.18980478" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4993573" visible="true" weight="0.19818799" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.2587601" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -729,13 +721,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/分布式缓存/geecache/protobuf/protobuf.proto">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/分布式缓存/geecache/cache/peers.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="348">
@@ -1069,6 +1054,13 @@
           <folding>
             <element signature="e#13#69#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Redis/redis文档">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
         </state>
       </provider>
     </entry>
