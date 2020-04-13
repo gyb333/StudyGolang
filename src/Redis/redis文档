@@ -1,5 +1,7 @@
 docker run -di --name=redis -v  /usr/local/redis/redis.conf:/usr/redis/redis.conf -p 6379:6379 redis
 
+docker exec -it redis redis-cli
+
 go get github.com/garyburd/redigo/redis
 
 基于Redis
