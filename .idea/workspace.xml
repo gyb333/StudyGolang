@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5378eaf9-fd24-443b-81a8-2dee3e07966b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/MQ/RabbitMQ文档" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ES/ElasticSearch文档" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redis/redis文档" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redis/redis文档" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,6 +34,7 @@
         <counts>
           <entry key="BufioData" value="1" />
           <entry key="Data" value="1" />
+          <entry key="ElasticSearch文档" value="1" />
           <entry key="RabbitMQ文档" value="2" />
           <entry key="Remark" value="1" />
           <entry key="SerializeData" value="1" />
@@ -66,11 +66,12 @@
           <entry key="IDEA_MODULE" value="3" />
           <entry key="JavaScript" value="1" />
           <entry key="Markdown" value="13" />
-          <entry key="PLAIN_TEXT" value="27" />
+          <entry key="PLAIN_TEXT" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="ElasticSearch文档" value="143" />
           <entry key="RabbitMQ文档" value="210" />
           <entry key="Remark" value="14" />
           <entry key="gitignore" value="3" />
@@ -89,7 +90,7 @@
           <entry key="DTD" value="34" />
           <entry key="Go" value="27873" />
           <entry key="Markdown" value="31" />
-          <entry key="PLAIN_TEXT" value="2185" />
+          <entry key="PLAIN_TEXT" value="2328" />
           <entry key="SQL" value="3" />
         </counts>
       </usages-collector>
@@ -163,16 +164,25 @@
         <entry file="file://$PROJECT_DIR$/src/Redis/redis文档">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-3045">
-              <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+              <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MQ/RabbitMQ文档">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="232">
+              <caret line="74" column="43" selection-start-line="74" selection-start-column="43" selection-end-line="74" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/MQ/RabbitMQ文档">
+        <entry file="file://$PROJECT_DIR$/src/ES/ElasticSearch文档">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+            <state relative-caret-position="503">
+              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
             </state>
           </provider>
         </entry>
@@ -181,7 +191,7 @@
         <entry file="file://$PROJECT_DIR$/src/MQ/9TTL_DLX/comsume/Consumer.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="319">
-              <caret line="33" column="5" lean-forward="true" selection-start-line="30" selection-start-column="4" selection-end-line="33" selection-end-column="5" />
+              <caret line="33" column="5" selection-start-line="30" selection-start-column="4" selection-end-line="33" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -190,7 +200,7 @@
         <entry file="file://$PROJECT_DIR$/src/MQ/9TTL_DLX/produce/Producer.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="406">
-              <caret line="35" column="21" lean-forward="true" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+              <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
               <folding>
                 <element signature="e#13#69#0" expanded="true" />
               </folding>
@@ -249,7 +259,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/分布式缓存/geecache/protobuf/protobuf.pb.go" />
         <option value="$PROJECT_DIR$/src/分布式缓存/geecache/cache/peers.go" />
         <option value="$PROJECT_DIR$/src/分布式缓存/geecache/cache/geecache.go" />
         <option value="$PROJECT_DIR$/src/分布式缓存/geecache/httpweb/httpPool.go" />
@@ -300,6 +309,7 @@
         <option value="$PROJECT_DIR$/src/Redis/redis_lock.go" />
         <option value="$PROJECT_DIR$/src/Redis/redis文档" />
         <option value="$PROJECT_DIR$/src/MQ/RabbitMQ文档" />
+        <option value="$PROJECT_DIR$/src/ES/ElasticSearch文档" />
       </list>
     </option>
   </component>
@@ -315,9 +325,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="252" />
-    <option name="y" value="36" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="187" />
+    <option name="y" value="115" />
     <option name="width" value="1679" />
     <option name="height" value="1032" />
   </component>
@@ -348,36 +358,7 @@
               <item name="StudyGolang" type="b2602c69:ProjectViewProjectNode" />
               <item name="StudyGolang" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="MQ" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StudyGolang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StudyGolang" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="MQ" type="462c0819:PsiDirectoryNode" />
-              <item name="9TTL_DLX" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StudyGolang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StudyGolang" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="MQ" type="462c0819:PsiDirectoryNode" />
-              <item name="9TTL_DLX" type="462c0819:PsiDirectoryNode" />
-              <item name="comsume" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StudyGolang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StudyGolang" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="MQ" type="462c0819:PsiDirectoryNode" />
-              <item name="9TTL_DLX" type="462c0819:PsiDirectoryNode" />
-              <item name="produce" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StudyGolang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StudyGolang" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Redis" type="462c0819:PsiDirectoryNode" />
+              <item name="ES" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="StudyGolang" type="b2602c69:ProjectViewProjectNode" />
@@ -397,7 +378,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586762047977" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586770539062" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Module.GOPATH.is.expanded" value="false" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
@@ -538,7 +519,7 @@
       <workItem from="1585805789335" duration="620000" />
       <workItem from="1585806468867" duration="17004000" />
       <workItem from="1585892489495" duration="6082000" />
-      <workItem from="1586225890337" duration="67574000" />
+      <workItem from="1586225890337" duration="75101000" />
     </task>
     <servers />
   </component>
@@ -575,7 +556,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="513633000" />
+    <option name="totallyTimeSpent" value="521160000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -587,10 +568,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="187" y="115" width="1679" height="1032" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49909583" visible="true" weight="0.11886994" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49909583" visible="true" weight="0.13773935" />
       <window_info id="Structure" order="1" sideWeight="0.50180507" side_tool="true" weight="0.15231362" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -605,7 +586,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Database Changes" order="6" show_stripe_button="false" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32928476" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.2505423" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.26280624" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50064266" side_tool="true" weight="0.45209175" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -761,13 +742,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/Go/src/github.com/streadway/amqp/connection.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8990">
-          <caret line="321" column="21" selection-start-line="321" selection-start-column="21" selection-end-line="321" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Go/src/github.com/streadway/amqp/_examples/simple-consumer/consumer.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-696" />
@@ -1085,7 +1059,7 @@
     <entry file="file://$PROJECT_DIR$/src/Redis/redis文档">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3045">
-          <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -1120,14 +1094,14 @@
     <entry file="file://$PROJECT_DIR$/src/MQ/9TTL_DLX/comsume/Consumer.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
-          <caret line="33" column="5" lean-forward="true" selection-start-line="30" selection-start-column="4" selection-end-line="33" selection-end-column="5" />
+          <caret line="33" column="5" selection-start-line="30" selection-start-column="4" selection-end-line="33" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MQ/9TTL_DLX/produce/Producer.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="406">
-          <caret line="35" column="21" lean-forward="true" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+          <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
           <folding>
             <element signature="e#13#69#0" expanded="true" />
           </folding>
@@ -1136,8 +1110,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MQ/RabbitMQ文档">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        <state relative-caret-position="232">
+          <caret line="74" column="43" selection-start-line="74" selection-start-column="43" selection-end-line="74" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ES/ElasticSearch文档">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
         </state>
       </provider>
     </entry>

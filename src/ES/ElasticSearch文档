@@ -1,0 +1,35 @@
+访问一个网页: curl www.baidu.com
+curl -o tt.html www.baidu.com
+
+显示响应的头信息:curl -i www.baidu.com
+
+显示一次HTTP请求的通信过程:curl -v www.baidu.com
+
+执行GET/POST/PUT/DELETE操作:curl -X GET/POST/PUT/DELETE url
+
+
+docker-compose ps
+docker-compose config  -q
+docker-compose up | down
+docker-compose exec nginx bash
+安装中文分词器:https://github.com/medcl/elasticsearch-analysis-ik
+docker cp elasticsearch-analysis-ik-6.5.4.zip esMaster:/usr/share/elasticsearch/plugins
+docker exec -it elasticsearch /bin/bash
+mkdir /usr/share/elasticsearch/plugins/ik
+mv elasticsearch-analysis-ik-6.5.4.zip ik
+unzip elasticsearch-analysis-ik-6.5.4.zip
+rm -rf elasticsearch-analysis-ik-6.5.4.zip
+以此类推 esSecond esSlave
+docker-compose restart
+
+curl -XGET -H 'Content-Type: application/json' 'http://hadoop:9200/_analyze?pretty' -d '{"analyzer" : "ik_max_word","text": "中华人民共和国国歌"}'
+curl -XPOST -H 'Content-Type: application/json' 'http://hadoop:9200/_analyze?pretty' -d '{"analyzer" : "ik_smart","text": "中华人民共和国国歌"}'
+
+
+require github.com/elastic/go-elasticsearch/v7 7.x
+go get -u github.com/elastic/go-elasticsearch
+
+
+go get github.com/olivere/elastic
+github.com/olivere/elastic/v7
+
