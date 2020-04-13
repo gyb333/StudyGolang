@@ -2,8 +2,97 @@ docker run -di --name=redis -v  /usr/local/redis/redis.conf:/usr/redis/redis.con
 
 go get github.com/garyburd/redigo/redis
 
+基于Redis
+缓存收益：加速读写,降低后端存储负载
+缓存成本：缓存和存储数据不一致性，代码维护成本,运维成本
+    缓存更新策略:1.LRU LFU FIFO 算法剔除数据 maxmemory-policy 一致性最差  成本低
+                    config get maxmemory-policy
+                 2.超时剔除:expire                          一致性较差  成本低
+                 3.主动更新:开发控制生命周期                 一致性强  成本高
 
-redis是键值对的数据库，有5中主要数据类型：
+    低一致性:最大内存和淘汰策略
+    高一致性:超时剔除和主动更新结合,最大内存和淘汰策略兜底
+
+缓存粒度控制:全部属性,部分重要属性
+    通用性考虑:全量属性更好
+    占用空间:部分属性更好
+    代码维护:表面上全量属性更好
+
+缓存穿透问题:大量请求不命中
+    业务代码自身问题
+    恶意攻击,爬虫
+ 解决方法:
+    1.缓存空对象:需要更多的键,缓冲层和存储层数据短期不一致
+    2.布隆过滤器拦截（大数据表问题处理,数据更新比较少）
+
+ 优化IO:1.命令本身优化 慢查询keys
+        2.减少网络通信次数
+        3.降低接入成本 长连接/连接池 NIO
+缓存无底洞问题:批量操作的时候,加机器性能反而下降
+雪崩问题：缓存层高可用，客户端降级 压力测试
+
+热点Key重建优化:热点key较长时间重建,大量的线程做查询数据源和重建缓存
+    redis互斥锁：
+    String get(String key){
+        string value=redis.get(key);
+        if(value==null){
+            string mutexKey="mutex:key:"+key;
+            if(redis.set(mutexkey,"1","ex 180","nx")){
+                value==db.get(key);
+                redis.set(key,value);
+                redis.delete(mutexkey);
+            }else{
+               Thread.sleep(50);
+               get(key);
+            }
+        }
+        return value
+    }
+    永不过期：没有设置过期时间,增加逻辑过期时间属性,使用单独线程去重建缓存
+    String get(String key){
+            V v=redis.get(key);
+            string value=v.getValue();
+            long logicTimeout=v.getLogicTimeout();
+            if(logicTimeout>=System.currentTimeMills()){
+                string mutexKey="mutex:key:"+key;
+                if(redis.set(mutexkey,"1","ex 180","nx")){
+                    threadPool.execute(new Runnable(){
+                        //异步更新后台数据
+                        value==db.get(key);
+                        redis.set(key,value);
+                        redis.delete(mutexkey);
+                    }
+                    });
+                }
+            }
+            return value
+        }
+
+相关指标:总调用数
+
+实现消息队列
+    可以利用redis的list结构来实现消息队列功能，使用lpush、rpush来实现入队，lpop、rpop来实现出队列。
+    我们统一从左边push、从右边pop，即用lpush和rpop组合。
+    当list中没有元素时，rpop会返回nil，这样我们需要不断用轮询队列，直到队列中有元素，然后pop出来。
+    为了避免不断轮询带来的性能损耗，我们这里使用brpop命令，brpop使用了系统提供的阻塞原语，
+    在队列中没有元素时，就会一直阻塞或者超出设置时间返回，当队列中有元素时，会执行rpop命令并返回
+
+实现延时队列
+    redis的zset是一种能自动排序的数据结构，我们可以用这个特性来实现简单的延时队列。
+
+    利用zadd将数据添加到zset中，每个数据的score值设置为数据的延时时间+当前时间戳，
+    后台goroutine不断zrange轮询zset，取出score值小于当前时间戳的数据，然后再对数据进一步处理，这样就实现了简单延时队列的功能。
+
+实现分布式锁
+    借助于redis的setnx命令来操作，setnx本身针对key赋值的时候会判断redis中是否存在这个key，如果有返回-1,  如果没有的化，他会直接set键值。那他跟直接set键值有啥区别？
+    setnx是原子操作，而set不能保证原子性。为了防止锁被长久锁定，或者防止客户端崩掉了没有删掉锁，可以用expire加入过期时间。
+     但这过期时间也不解决那种客户端异常退出，又没删除锁的情况。
+     我在使用etcd做服务发现注册时候，用了一个笨办法，把过期时间调的很细，可以开一个线程不停的去设置锁及过期时间.
+     这样能缓解一般的过期情况.
+
+
+
+redis是键值对的数据库，有5中主要数据类型:
 字符串类型（string），散列类型（hash），列表类型（list），集合类型（set），有序集合类型（zset）
 KEYS * 获得当前数据库的所有键
 EXISTS key [key ...]  判断键是否存在，返回个数，如果key有一样的也是叠加数
@@ -16,7 +105,7 @@ config get slowlog-log-slower-than
 config set slowlog-max-len=128
 config set slowlog-log-slower-than=1000
 
-pipeline流水线：一次通信发送多条命令
+pipeline流水线:一次通信发送多条命令
 
 bitMap 操作位图 数据统计 位图可以有效节省空间
 setbit key offset value
@@ -36,7 +125,7 @@ bitop op destkey key [key....]
 计算位图指定范围偏移量
 bitpos key targetBit [start] [end]
 
-Hyperloglog：极小空间完成独立数量统计，本质为string
+Hyperloglog:极小空间完成独立数量统计，本质为string
 pfadd hyperlogkey "uuid-1" "uuid-2" "uuid-3" "uuid-4"
 pfcount hyperlogkey
 pfadd hyperlogkey "uuid-1" "uuid-2" "uuid-5" "uuid-90"
@@ -149,7 +238,7 @@ set
     srem myset set1         删除
     sismember myset set1 判断元素是否在集合中
     scard key_name       个数
-    sdiff | sinter | sunion 操作：集合间运算：差集 | 交集 | 并集
+    sdiff | sinter | sunion 操作:集合间运算:差集 | 交集 | 并集
     srandmember          随机获取集合中的元素
     spop                 从集合中弹出一个元素
 
@@ -174,24 +263,24 @@ zset
     zunionstore rank:last_week 7 rank:20150323 rank:20150324 rank:20150325  weights 1 1 1 1 1 1 1
 
 
-排序：
+排序:
     sort mylist  排序
     sort mylist alpha desc limit 0 2 字母排序
     sort list by it:* desc           by命令
     sort list by it:* desc get it:*  get参数
-    sort list by it:* desc get it:* store sorc:result  sort命令之store参数：表示把sort查询的结果集保存起来
+    sort list by it:* desc get it:* store sorc:result  sort命令之store参数:表示把sort查询的结果集保存起来
 
-订阅与发布：
-    订阅频道：subscribe chat1
-    发布消息：publish chat1 "hell0 ni hao"
-    查看频道：pubsub channels
+订阅与发布:
+    订阅频道:subscribe chat1
+    发布消息:publish chat1 "hell0 ni hao"
+    查看频道:pubsub channels
     查看某个频道的订阅者数量: pubsub numsub chat1
-    退订指定频道： unsubscrible chat1   , punsubscribe java.*
-    订阅一组频道： psubscribe java.*
+    退订指定频道: unsubscrible chat1   , punsubscribe java.*
+    订阅一组频道: psubscribe java.*
 
-redis事物：
+redis事物:
      隔离性，原子性，
-     步骤：  开始事务，执行命令，提交事务
+     步骤:  开始事务，执行命令，提交事务
              multi  //开启事务
              sadd myset a b c
              sadd myset e f g
@@ -226,7 +315,7 @@ aop备份处理
 appendonly yes 开启持久化
 appendfsync everysec 每秒备份一次
 
-命令：
+命令:
 bgsave异步保存数据到磁盘（快照保存）
 lastsave返回上次成功保存到磁盘的unix的时间戳
 shutdown同步保存到服务器并关闭redis服务器

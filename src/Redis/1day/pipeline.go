@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	c:=GetRedisConnection("tcp","hadoop:6379")
+	c:= GetRedisConn("tcp","hadoop:6379")
 	defer c.Close()
 	start:=time.Now()
 	for j:=0;j<1000;j++{
