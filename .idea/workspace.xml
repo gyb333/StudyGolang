@@ -2,29 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5378eaf9-fd24-443b-81a8-2dee3e07966b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/middleware/ES/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/middleware/ES/test/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/middleware/kettle文档" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/middleware/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/middleware/核心" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/MQ/common.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/MQ/rabbitmq.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/Redis/common.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/github.com/streadway/amqp.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/middleware/MQ/common.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/分布式缓存/geecache/cache.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/分布式缓存/geecache/httpweb.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/分布式缓存/geecache/lru.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/分布式缓存/lru.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/windows_amd64/深入浅出/事件驱动/Events.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middleware/ES/ElasticSearch文档" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/ES/ElasticSearch文档" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middleware/MQ/2day/worker/worker.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/MQ/2day/worker/worker.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middleware/MQ/7comfirm/publish/Producer.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/MQ/7comfirm/publish/Producer.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middleware/MQ/8Return/produce/Producer.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/MQ/8Return/produce/Producer.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middleware/MQ/RabbitMQ文档" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/MQ/RabbitMQ文档" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middleware/MQ/delay_queue/Producer.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/MQ/delay_queue/Producer.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middleware/Redis/redis文档" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/Redis/redis文档" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middleware/kettle文档" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/kettle文档" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -193,8 +171,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/middleware/kettle文档">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
-              <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
+            <state relative-caret-position="299">
+              <caret line="22" column="66" selection-start-line="22" selection-start-column="66" selection-end-line="22" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -322,9 +300,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="154" />
-    <option name="y" value="52" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="170" />
+    <option name="y" value="130" />
     <option name="width" value="1679" />
     <option name="height" value="1032" />
   </component>
@@ -363,7 +341,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587455830724" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587461730563" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Module.GOPATH.is.expanded" value="false" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
@@ -509,7 +487,7 @@
       <workItem from="1587342531283" duration="19169000" />
       <workItem from="1587370805960" duration="4588000" />
       <workItem from="1587430324987" duration="4123000" />
-      <workItem from="1587452726351" duration="3093000" />
+      <workItem from="1587452726351" duration="3843000" />
     </task>
     <servers />
   </component>
@@ -546,7 +524,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="567268000" />
+    <option name="totallyTimeSpent" value="568018000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1063,8 +1041,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/middleware/kettle文档">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
+        <state relative-caret-position="299">
+          <caret line="22" column="66" selection-start-line="22" selection-start-column="66" selection-end-line="22" selection-end-column="66" />
         </state>
       </provider>
     </entry>

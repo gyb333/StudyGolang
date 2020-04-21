@@ -20,7 +20,7 @@ Kettle本身提供了一个用于调度的Web服务Carte。Carte允许远程请�
 </slave_config>
 
 2.启动Carte：启动时将刚刚的配置文件加上
-nohup carte.sh pwd/carte-config-master-8080.xml 2>&1 &
+nohup carte.sh pwd/carte-config-master-8080.xml 1>carte.log 2>&1 &
 http://hadoop:9191/kettle/status/
 
 3.配置子服务器
