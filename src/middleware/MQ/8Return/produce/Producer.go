@@ -7,7 +7,7 @@ import (
 	"os"
 	"os/signal"
 	"syscall"
-)
+	)
 
 
 func main() {
@@ -47,6 +47,7 @@ func main() {
 }
 
 func handleReturn(returns <-chan amqp.Return)  {
+
 	for{
 		ticker := time.NewTicker(10*time.Second)
 		select {
@@ -59,6 +60,7 @@ func handleReturn(returns <-chan amqp.Return)  {
 		case <-time.After(time.Second * 3):
 			log.Println("request time out")
 		//default:
+		//	runtime.Gosched()
 		//	log.Println("default")
 		}
 

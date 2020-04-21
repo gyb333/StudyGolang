@@ -23,6 +23,6 @@ func main() {
 			DeliveryMode: amqp.Persistent,
 			ContentType: "text/plain",
 			Body :      []byte("x-delayed-message"),
-			//Expiration:"10000",//生产者消息设置超时时间
+			//Expiration:"10000",//生产者消息设置超时时间,会阻塞后面的消息
 		},)
 }

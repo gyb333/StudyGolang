@@ -13,6 +13,9 @@ import (
 //go run worker.go
 //工作队列，它假设队列中的每一个任务都只会被分发到一个工作者进行处理。
 func main() {
+	sig := make(chan os.Signal, 1)
+	signal.Notify(sig, syscall.SIGINT, syscall.SIGTERM, syscall.SIGHUP, syscall.SIGQUIT)
+
 	conn,ch :=GetRabbitConnChan("root","root","Hadoop",5672)
 	defer conn.Close()
 	defer ch.Close()
@@ -30,8 +33,7 @@ func main() {
 	FailOnError(err, "Failed to register a consumer")
 
 
-	sig := make(chan os.Signal, 1)
-	signal.Notify(sig, syscall.SIGINT, syscall.SIGTERM, syscall.SIGHUP, syscall.SIGQUIT)
+
 	go func() {
 		for d := range msgs {
 			log.Printf("Received a message: %s", d.Body)

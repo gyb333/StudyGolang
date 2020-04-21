@@ -7,6 +7,7 @@ go get github.com/garyburd/redigo/redis
 基于Redis
 缓存收益：加速读写,降低后端存储负载
 缓存成本：缓存和存储数据不一致性，代码维护成本,运维成本
+
     缓存更新策略:1.LRU LFU FIFO 算法剔除数据 maxmemory-policy 一致性最差  成本低
                     config get maxmemory-policy
                  2.超时剔除:expire                          一致性较差  成本低
@@ -230,12 +231,12 @@ list
     lindex mylist 2          指定索引的值
     lset mylist 2 n          索引设值
     ltrim mylist 0 4         删除key
-    linsert mylist before a  插入
-    linsert mylist after a   插入
+    linsert mylist before value a  插入
+    linsert mylist after value a   插入
     rpoplpush list list2     转移列表的数据
 
 set
-    sadd myset redis
+    sadd myset redis go rabbitmq java
     smembers myset       数据集合
     srem myset set1         删除
     sismember myset set1 判断元素是否在集合中
@@ -246,8 +247,7 @@ set
 
 zset
     zadd zset 1 one
-    zadd zset 2 two
-    zadd zset 3 three
+    zadd zset 2 two  3 three
     zincrby zset 1 one              增长分数
     zscore zset two                 获取分数
     zrange zset 0 -1 withscores     范围值

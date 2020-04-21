@@ -8,7 +8,7 @@ import (
 	"os"
 	"os/signal"
 	"syscall"
-)
+	)
 
 
 
@@ -45,7 +45,7 @@ func main() {
 
 func confirm(confirms <-chan amqp.Confirmation){
 	for{
-		ticker := time.NewTicker(10*time.Millisecond)
+		ticker := time.NewTicker(100*time.Millisecond)
 		select {
 		case confirm := <-confirms:
 			if confirm.Ack {
@@ -53,6 +53,8 @@ func confirm(confirms <-chan amqp.Confirmation){
 			}
 		case <- ticker.C:
 			log.Println("time out")
+		//default:
+		//	runtime.Gosched()
 		}
 	}
 

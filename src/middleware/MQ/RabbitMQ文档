@@ -56,6 +56,7 @@ Confirm确认消息 Return消息机制
     消费端重回队列是为了对没有处理成功的消息, 把消息重新回递给Broker;一般在实际应用中, 都会关闭重回队列, 也就是设置为False
 
 TTL队列/消息:延时消息或延时队列,配置"x-message-ttl"参数
+    导致后面的消息阻塞
 
 死信队列(DLX)：1.消息被拒绝(basic.reject/basic.nack) 并且requeue重回队列设置成false
           2.消息TTL过期
