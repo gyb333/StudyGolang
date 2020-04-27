@@ -2,7 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5378eaf9-fd24-443b-81a8-2dee3e07966b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/middleware/kettle文档" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/kettle文档" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/middleware/Kettle/.kettle/kettle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/middleware/Kettle/.kettle/repositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/middleware/Kettle/.kettle/shared.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/middleware/Kettle/company/CompanyJob.kjb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/middleware/Kettle/company/comapny.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/middleware/Kettle/company/全量模式.ktr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/middleware/Kettle/company/公司转换.ktr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/middleware/Kettle/company/增量模式.ktr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/middleware/Kettle/company/自定义时间段模式.ktr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/middleware/Kettle/company/解锁状态.ktr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/middleware/Kettle/job.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/middleware/Kettle/job.kjb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/middleware/Kettle/pan.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/middleware/Kettle/pan.ktr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middleware/kettle文档" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/Kettle/kettle文档" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,10 +30,10 @@
     <session id="2120231562">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="15" />
+          <entry key="project.closed" value="18" />
           <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.11" value="3" />
+          <entry key="project.open.time.11" value="4" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="4" />
           <entry key="project.open.time.2" value="1" />
@@ -26,9 +41,9 @@
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.open.time.8" value="1" />
+          <entry key="project.open.time.8" value="2" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="20" />
+          <entry key="project.opened" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -39,16 +54,18 @@
           <entry key="RabbitMQ文档" value="5" />
           <entry key="Remark" value="1" />
           <entry key="SerializeData" value="1" />
+          <entry key="bat" value="2" />
           <entry key="css" value="1" />
           <entry key="gitignore" value="1" />
-          <entry key="go" value="964" />
+          <entry key="go" value="966" />
           <entry key="h" value="1" />
           <entry key="html" value="6" />
           <entry key="iml" value="3" />
           <entry key="in" value="1" />
           <entry key="js" value="1" />
           <entry key="kettle" value="1" />
-          <entry key="kettle文档" value="1" />
+          <entry key="kettle文档" value="2" />
+          <entry key="ktr" value="1" />
           <entry key="log" value="6" />
           <entry key="md" value="13" />
           <entry key="mod" value="4" />
@@ -57,6 +74,7 @@
           <entry key="sh" value="1" />
           <entry key="toml" value="7" />
           <entry key="tttt" value="1" />
+          <entry key="xml" value="2" />
           <entry key="安装文档" value="1" />
           <entry key="核心" value="2" />
         </counts>
@@ -66,12 +84,13 @@
           <entry key="C++" value="1" />
           <entry key="CSS" value="1" />
           <entry key="DTD" value="4" />
-          <entry key="Go" value="964" />
+          <entry key="Go" value="966" />
           <entry key="HTML" value="6" />
           <entry key="IDEA_MODULE" value="3" />
           <entry key="JavaScript" value="1" />
           <entry key="Markdown" value="13" />
-          <entry key="PLAIN_TEXT" value="39" />
+          <entry key="PLAIN_TEXT" value="43" />
+          <entry key="XML" value="2" />
           <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
@@ -167,17 +186,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/middleware/kettle文档">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="22" column="66" selection-start-line="22" selection-start-column="66" selection-end-line="22" selection-end-column="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -300,9 +309,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="170" />
-    <option name="y" value="130" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="39" />
+    <option name="y" value="127" />
     <option name="width" value="1679" />
     <option name="height" value="1032" />
   </component>
@@ -314,10 +323,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="CatdeaLogs" />
       <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="CatdeaLogs" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -330,6 +339,45 @@
               <item name="StudyGolang" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="StudyGolang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StudyGolang" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="middleware" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StudyGolang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StudyGolang" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="middleware" type="462c0819:PsiDirectoryNode" />
+              <item name="MQ" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StudyGolang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StudyGolang" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="middleware" type="462c0819:PsiDirectoryNode" />
+              <item name="MQ" type="462c0819:PsiDirectoryNode" />
+              <item name="5Topic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StudyGolang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StudyGolang" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="middleware" type="462c0819:PsiDirectoryNode" />
+              <item name="MQ" type="462c0819:PsiDirectoryNode" />
+              <item name="5Topic" type="462c0819:PsiDirectoryNode" />
+              <item name="comsume" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StudyGolang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StudyGolang" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="middleware" type="462c0819:PsiDirectoryNode" />
+              <item name="MQ" type="462c0819:PsiDirectoryNode" />
+              <item name="5Topic" type="462c0819:PsiDirectoryNode" />
+              <item name="publish" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -341,7 +389,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587461730563" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587602808182" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Module.GOPATH.is.expanded" value="false" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
@@ -357,18 +405,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\StudyGolang\src\middleware\Kettle" />
+      <recent name="D:\StudyGolang\src\middleware\ES" />
       <recent name="D:\StudyGolang\src\core" />
       <recent name="D:\StudyGolang\src\Redis" />
       <recent name="D:\StudyGolang\src\Redis\common" />
-      <recent name="D:\StudyGolang\src\MQ\3fanout\comsume" />
-      <recent name="D:\StudyGolang\src\MQ\3fanout" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\StudyGolang\src\middleware\Kettle\.kettle" />
+      <recent name="D:\StudyGolang\src\middleware\Kettle" />
       <recent name="D:\StudyGolang\src\MQ\9TTL_DLX" />
       <recent name="D:\StudyGolang\src" />
       <recent name="D:\StudyGolang\src\test\example" />
-      <recent name="E:\Work\StudyGolang\src\algorithm\maze" />
-      <recent name="D:\StudyGolang\src\algorithm\maze" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -487,7 +535,9 @@
       <workItem from="1587342531283" duration="19169000" />
       <workItem from="1587370805960" duration="4588000" />
       <workItem from="1587430324987" duration="4123000" />
-      <workItem from="1587452726351" duration="3843000" />
+      <workItem from="1587452726351" duration="4070000" />
+      <workItem from="1587515654447" duration="1918000" />
+      <workItem from="1587543954306" duration="2144000" />
     </task>
     <servers />
   </component>
@@ -524,7 +574,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="568018000" />
+    <option name="totallyTimeSpent" value="572307000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -537,9 +587,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49909583" visible="true" weight="0.12526652" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49909583" visible="true" weight="0.12793177" />
       <window_info id="Structure" order="1" sideWeight="0.50180507" side_tool="true" weight="0.15231362" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -554,7 +603,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Database Changes" order="6" show_stripe_button="false" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32928476" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.2559653" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.2559653" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5010661" side_tool="true" weight="0.3449024" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -710,22 +759,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/rpc/rpcdemo/server/main.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/深入浅出/协程池/simple/simple.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2262" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/深入浅出/对象池/ObjectPool.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1305" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/深入浅出/工作池/WorkerPool.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/深入浅出/高性能字符串拼接/string_benchmark_test.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2697">
@@ -883,20 +916,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/middleware/MQ/5Topic/comsume/receive_logs.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="47" column="36" lean-forward="true" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/middleware/MQ/5Topic/publish/emit_log.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/middleware/MQ/6rpc/client/rpc_client.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="429">
@@ -1009,14 +1028,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/middleware/ES/test/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="133" column="18" selection-start-line="133" selection-start-column="8" selection-end-line="133" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/middleware/kettle" />
+    <entry file="file://$PROJECT_DIR$/src/middleware/ES/test/main.go" />
+    <entry file="file://$PROJECT_DIR$/src/middleware/Kettle" />
     <entry file="file://$PROJECT_DIR$/src/middleware/ES/ElasticSearch文档">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1218">
@@ -1028,21 +1041,41 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="265">
           <caret line="140" column="5" lean-forward="true" selection-start-line="140" selection-start-column="5" selection-end-line="140" selection-end-column="5" />
-          <folding>
-            <element signature="n#!!block;n#getClient#0" />
-            <element signature="n#!!block;n#Ping#0" />
-            <element signature="n#!!block;n#createIndex#0" />
-            <element signature="n#!!block;n#deleteIndex#0" />
-            <element signature="n#!!block;n#getData#0" />
-            <element signature="n#!!block;n#update#0" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/middleware/kettle文档">
+    <entry file="file://$PROJECT_DIR$/src/middleware/Kettle/job.bat">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/middleware/Kettle/company/全量模式.ktr">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/middleware/Kettle/pan.bat">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/middleware/Kettle/.kettle/shared.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="22" column="66" selection-start-line="22" selection-start-column="66" selection-end-line="22" selection-end-column="66" />
+        <state relative-caret-position="-2871" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/middleware/Kettle/kettle文档">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="51" lean-forward="true" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/middleware/MQ/5Topic/publish/emit_log.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/middleware/MQ/5Topic/comsume/receive_logs.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="51" />
         </state>
       </provider>
     </entry>
